@@ -408,6 +408,16 @@ def _demethyl(m, i):
     return Chem.MolToSmiles(rw, isomericSmiles=True)
 
 
+def predict_frozen_head(frame, bank, checkpoint):
+    weights = torch.load(checkpoint, map_location="cpu", weights_only=True)
+    net = make_head(weights["weight_dims"])
+    net.load_state_dict(weights["state"])
+    net.eval()
+    scale = {key: value.numpy() for key, value in weights["scale"].items()}
+    with torch.inference_mode():
+        return net(scaling(make_x(frame, bank, checkpoint.stem), scale)).numpy()
+
+
 def main():
     a = argparse.ArgumentParser()
     a.add_argument("--edits", type=Path, default=Path("results/pairs/edits.csv"))
@@ -426,18 +436,8 @@ def main():
         df, ex = eligible(df, bank)
         if len(ex):
             raise ValueError(str(ex.iloc[0].to_dict()))
-        w = torch.load(o.predict_head, map_location="cpu", weights_only=True)
         name = o.predict_head.stem
-        net = make_head(w["weight_dims"])
-        net.load_state_dict(w["state"])
-        net.eval()
-        with torch.inference_mode():
-            yp = net(
-                scaling(
-                    make_x(df, bank, name),
-                    {k: v.numpy() for k, v in w["scale"].items()},
-                )
-            ).numpy()
+        yp = predict_frozen_head(df, bank, o.predict_head)
         pd.DataFrame(dict(pair_id=df.pair_id, model=name, pred_delta=yp)).to_csv(
             o.out, index=False
         )

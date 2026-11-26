@@ -41,13 +41,13 @@ def cache_lock(cache):
                 import fcntl
                 fcntl.flock(handle.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
         except OSError as exc:
-            raise SystemExit("Another B pairs/train/series job is using the same cache. Let it finish and run again.") from exc
+            raise SystemExit("Another B job is using the same cache. Let it finish and run again.") from exc
         yield
 
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("task", nargs="?", default="quick",choices=["quick","pairs","baseline","train","series","conformation"])
+    parser.add_argument("task", nargs="?", default="quick",choices=["quick","pairs","baseline","train","series","conformation","external"])
     parser.add_argument("--device", choices=["cpu","cuda"], default="cpu",
                         help="Use cuda only for encoder inference in train/series")
     parser.add_argument("--threads",type=int,default=2)
@@ -56,7 +56,7 @@ def main():
         parser.error("--device cuda applies to the two pretrained encoders in train or series")
     if a.threads<1:
         parser.error("--threads must be positive")
-    guard = cache_lock(PROJECT / "cache") if a.task in ("pairs", "train", "series") else nullcontext()
+    guard = cache_lock(PROJECT / "cache") if a.task in ("pairs", "train", "series", "external") else nullcontext()
     with guard:
         dispatch(a)
 
@@ -93,6 +93,8 @@ def dispatch(a):
         run(scripts/"audit_legacy.py","--refit",out/"baseline","--output",out/"audit")
         v=json.loads((out/"audit/audit.json").read_text(encoding="utf-8"))["refit_rescore"]
         print(f"B_BASELINE_OK  ExtraTrees MAE={v['mae']:.4f}  train-mean MAE={v['training_mean_baseline_mae']:.4f}")
+    elif a.task=="external":
+        run(scripts/"external_ly.py", "--out", out, "--threads", a.threads)
     elif a.task=="conformation":
         run(scripts/"conform_ablation.py","--output",out/"conformation")
         print("B_CONFORMATION_OK")
