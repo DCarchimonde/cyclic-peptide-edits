@@ -1,0 +1,31 @@
+{
+  "version": "0.1",
+  "molecule_key": "molecule_id",
+  "cache_format": "npz_without_pickled_objects",
+  "required_arrays": {
+    "molecule_id": "one-dimensional unicode strings; unique and aligned to all arrays",
+    "protein": "float32 [n, protein_dim], real cached protein encoder features",
+    "chemical": "float32 [n, chemical_dim], real cached complete-molecule encoder features",
+    "edit": "float32 [n, edit_dim], explicitly defined chemical-edit/context features"
+  },
+  "optional_arrays": {
+    "geometry": "float32 [n, geometry_dim]; real geometry encoding for these molecules"
+  },
+  "metadata_required": [
+    "encoder_names",
+    "checkpoint_revisions",
+    "molecule_mapping_method",
+    "edit_feature_definition",
+    "geometry_method_if_present",
+    "data_sha256",
+    "features_are_real"
+  ],
+  "notes": [
+    "This file defines an input contract, not pretrained embeddings.",
+    "Do not silently map noncanonical residues to canonical residues as the sole chemical representation.",
+    "Preserve chirality, cyclization connectivity, and terminal chemistry in the molecular identity.",
+    "A reference used to define an edit must have a recorded parent_molecule_id.",
+    "Future pair experiments must keep parent/analogue families inside a single split."
+  ]
+}
+

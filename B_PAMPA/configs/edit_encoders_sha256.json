@@ -1,0 +1,12 @@
+{
+  "esm/model.safetensors": "24c5fa474c48f3b754b86efe752d5f189d2bcd88190fa2270fc92b2ef3034189",
+  "esm/config.json": "facb9355e8252149f6f99dff5fd1e32e890c3c655362b261d0c81cd6b5839c85",
+  "esm/vocab.txt": "0b82cc0a7c7cf9e567b1e5892d793285b9fbae822c964ca48696f7db44598e03",
+  "esm/special_tokens_map.json": "3aedcd4211c0d43aec4e607ff60a63255f3174ead795e997350f09a5f8cd9ee1",
+  "esm/tokenizer_config.json": "7e9161ecdb548ec45a41cbc6b24aa4476fdd418461f491c4207baa99419a29ad",
+  "chem/pytorch_model.bin": "95571af26b61ba8d56b9d61ff108b5c9afe96fd69ea3cbd1901d9421e3d2dd6d",
+  "chem/config.json": "b9ec477f76a173461741cb0f339b89661c9d9249af2f6a84df7593c3baede9b0",
+  "chem/tokenizer.json": "1197005224bc8917f46f8d6fc360aec71c6626858966e167b2ff8af62214f814",
+  "chem/special_tokens_map.json": "23dbc119b7e11cb23d3c43b13004c5a4ab4e6530c7146e34fa1f9564856b5580",
+  "chem/tokenizer_config.json": "79919cd4b54bdf241f19956753e8a47b8b782eb4b38eec0e0254bd2434545abd"
+}

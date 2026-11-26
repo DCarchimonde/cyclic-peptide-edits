@@ -1,0 +1,9 @@
+numpy==2.3.5
+pandas==2.2.3
+scipy==1.17.0
+scikit-learn==1.8.0
+rdkit==2026.9.2
+transformers==4.46.3
+tokenizers==0.20.3
+safetensors==0.6.2
+joblib==1.5.3

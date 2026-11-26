@@ -1,0 +1,47 @@
+{
+  "data_sha256": "7993ebce90c21d5542e65ac3a6a62aab5b83b712d3d6ebed1bdeec21f3307f9f",
+  "archived_predictions_sha256": "07e70b7e3c0e3292bea6f0bddec2cf9db2e9f986c864a8f0bc34f86017a28b1f",
+  "refit_predictions_sha256": "82bbc1deda1434b94c22c517677ec6ccdff8282725c1d70a91155b395832115a",
+  "training_parameters": {
+    "trees": 200,
+    "seed": 2026,
+    "max_depth": 14,
+    "min_samples_leaf": 2
+  },
+  "archive_rescore": {
+    "train_records": 5828,
+    "test_records": 730,
+    "train_sources": 28,
+    "test_sources": 7,
+    "excluded_overlap": 4,
+    "training_mean": -5.661952642415923,
+    "mae": 0.8814694251158985,
+    "rmse": 1.1759345489110433,
+    "spearman": 0.02128957614323288,
+    "training_mean_baseline_mae": 0.851937749739096
+  },
+  "refit_rescore": {
+    "train_records": 5828,
+    "test_records": 730,
+    "train_sources": 28,
+    "test_sources": 7,
+    "excluded_overlap": 4,
+    "training_mean": -5.661952642415923,
+    "mae": 0.8814694251158985,
+    "rmse": 1.1759345489110433,
+    "spearman": 0.02128957614323288,
+    "training_mean_baseline_mae": 0.851937749739096
+  },
+  "identical_split_assignments": true,
+  "maximum_absolute_refit_minus_archive_prediction": 4.440892098500626e-15,
+  "refit_worse_than_training_mean_mae_by": 0.02953167537680257,
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "rdkit": "2026.9.2",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "joblib": "1.5.3"
+  },
+  "python": "3.12.14"
+}

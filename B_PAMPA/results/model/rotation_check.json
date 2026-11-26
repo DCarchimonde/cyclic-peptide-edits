@@ -1,0 +1,26 @@
+{
+  "pair_id": "pair_00051a06f603f53d7f",
+  "verified_closed_peptide": true,
+  "actual_parent_y": -5.5,
+  "actual_variant_y": -5.19,
+  "parent_input_root_n_indices": [
+    5,
+    53,
+    45,
+    37,
+    29,
+    18,
+    10
+  ],
+  "fitted_score_per_root": [
+    0.4467114210128784,
+    0.4467114210128784,
+    0.4467114210128784,
+    0.4467114210128784,
+    0.4467114210128784,
+    0.4467114210128784,
+    0.4467114210128784
+  ],
+  "max_abs_score_change": 0.0,
+  "max_rotated_aligned_esm_absolute_error": 0.0
+}

@@ -1,0 +1,61 @@
+{
+  "unit": "log10(PAMPA cm/s)",
+  "sources": {
+    "2020_Townsend": {
+      "family": "Townsend geometric hexa/heptapeptomer library",
+      "group_rule": "townsend_sublibrary",
+      "split": "train",
+      "url": "https://doi.org/10.26434/chemrxiv.13335941.v1",
+      "conditions": "Double-sink PAMPA, pooled 500 µM, donor 0.2% polysorbate 80 and acceptor 0.2% TPGS. Keep 12 hexamer and 24 heptamer mixtures separate."
+    },
+    "2021_Kelly": {
+      "family": "Kelly lariat topology and stereochemistry libraries",
+      "group_rule": "kelly_sublibrary",
+      "split": "test",
+      "url": "https://doi.org/10.1021/jacs.0c06115",
+      "conditions": "16 separate L1 pools, L2–4 separate, L5 separate sink. L1–4 used 250 µM total, 1% soy lecithin/dodecane, PBS/5% DMSO, 18 h. L5 added 0.2% polysorbate 80 donor and 0.2% TPGS-750M acceptor."
+    },
+    "2016_Furukawa": {
+      "family": "Furukawa cyclic peptomer libraries",
+      "group_rule": "furukawa_sublibrary",
+      "split": "train",
+      "url": "https://doi.org/10.1021/acs.jmedchem.6b01246.s001",
+      "conditions": "SI S71–S72 and tables. Library 1 160 µM (4 µM per theoretical compound), library 2 180 µM (5 µM); ~14 h triplicate, lecithin/dodecane, PBS/5% DMSO. Separate x.y sublibrary mixtures."
+    },
+    "2015_Bockus_2": {
+      "family": "Bockus sanguinamide A analogues",
+      "group_rule": "one_panel",
+      "split": "valid",
+      "url": "https://doi.org/10.1021/acs.jmedchem.5b00919.s001",
+      "conditions": "SI S4–5. 10 µM, pH 7.4, 5% DMSO/PBS, 1% lecithin/dodecane, 10 h room temperature, triplicate LC–MS."
+    },
+    "2018_Lee": {
+      "family": "Lee LB51 scan",
+      "group_rule": "one_panel",
+      "split": "train",
+      "url": "https://doi.org/10.1002/pep2.24063",
+      "conditions": "LB51 and compounds 9–13 tested together on PAMPA. Numeric panel also reported in Marine Drugs 2021 Fig 4, DOI 10.3390/md19060311."
+    },
+    "2020_Le Roux": {
+      "family": "Le Roux semipeptidic macrocycles",
+      "group_rule": "one_panel",
+      "split": "test",
+      "url": "https://doi.org/10.1021/acs.jmedchem.0c00013.s002",
+      "conditions": "SI S15. Pharmaron Millipore PVDF, 1.8% lecithin in dodecane, 10 µM, PBS, 16 h at 25 °C, LC–MS/MS. Exclude explicit limits."
+    },
+    "2022_Bhardwaj": {
+      "family": "Bhardwaj de novo macrocycles",
+      "group_rule": "one_panel",
+      "split": "valid",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11062899/",
+      "conditions": "Corning BioCoat PAMPA, peptide 50 µM, donor/acceptor PBS pH 7.4 with 5% DMSO, 12–18 h at room temperature and LC–MS. Per-plate times unavailable."
+    },
+    "2015_Wang": {
+      "family": "Wang cyclic hexapeptide panel",
+      "group_rule": "one_panel",
+      "split": "valid",
+      "url": "https://doi.org/10.1016/j.ejmech.2015.04.049",
+      "conditions": "62 SI Table S1 entries; subtract six from source log column; preserve SEM. BD Gentest precoated DOPC/hexadecane, HBSS/5% DMSO, 5 h room temperature, UHPLC/MS. Exclude 12 and 16 for poor recovery, 29,30,31,46,49,50,59,60 nonquantitative."
+    }
+  }
+}

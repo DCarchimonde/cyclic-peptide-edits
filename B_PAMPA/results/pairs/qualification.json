@@ -1,0 +1,29 @@
+{
+  "stereo_invalid_rows": 17,
+  "unique_isomeric_graphs": 6872,
+  "duplicate_graphs": 40,
+  "duplicate_graphs_across_sources": 19,
+  "excess_rows_within_source": 21,
+  "duplicate_frozen_point_cells": 0,
+  "quantitative_group_parent_status": {
+    "measured_same_protocol": 675,
+    "virtual_unobserved": 395,
+    "same_protocol_nonquantitative": 42
+  },
+  "ranking_group_size": {
+    "2": 965,
+    "3": 142,
+    "4": 4,
+    "5": 1
+  },
+  "protocol_specific_explicit_bounds": 5,
+  "measured_interval_edges": 0,
+  "quality_statuses": {
+    "point": 6558,
+    "reported_limit_or_nonquantitative": 317,
+    "low_recovery": 2,
+    "source_nonquantitative": 8,
+    "zero_transmission_QC": 53,
+    "database_boundary": 3
+  }
+}

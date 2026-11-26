@@ -1,0 +1,3 @@
+# Rescoring verifies archived input bytes, including on Windows.
+R0_Cho/source/** -text
+SETUP_WINDOWS.cmd text eol=crlf

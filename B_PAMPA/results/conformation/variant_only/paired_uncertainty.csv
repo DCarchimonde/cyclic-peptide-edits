@@ -1,0 +1,13 @@
+evaluation,metric,arm,reference,independent_series,paired_change,bootstrap_series_n,ci_lower,ci_upper
+fixed_test,regret,2D_water,2D,1,-0.0003275109170305657,0,,
+fixed_test,regret,2D_water_hexane,2D,1,0.0022489082969432417,0,,
+fixed_test,hit,2D_water,2D,1,0.006550218340611369,0,,
+fixed_test,hit,2D_water_hexane,2D,1,-0.007641921397379903,0,,
+fixed_test,delta_mae,2D_water,2D,1,-0.0010138015265030444,0,,
+fixed_test,delta_mae,2D_water_hexane,2D,1,0.0015064577189092265,0,,
+fixed_valid,regret,2D_water,2D,1,-0.07200000000000006,0,,
+fixed_valid,regret,2D_water_hexane,2D,1,0.0019999999999999463,0,,
+fixed_valid,hit,2D_water,2D,1,0.2000000000000001,0,,
+fixed_valid,hit,2D_water_hexane,2D,1,-0.19999999999999996,0,,
+fixed_valid,delta_mae,2D_water,2D,1,0.0003589457199311141,0,,
+fixed_valid,delta_mae,2D_water_hexane,2D,1,0.0004889764353648296,0,,

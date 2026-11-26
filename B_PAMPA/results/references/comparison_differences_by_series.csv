@@ -1,0 +1,89 @@
+cohort,model,series_id,source,rank_parents,deltas,explicit_minus_comparator_regret,explicit_minus_comparator_top1,explicit_minus_comparator_delta_mae,explicit_minus_comparator_direction
+full_common_test,Chemprop_DMPNN_absolute_difference,series_ead665d28dd3375862,2021_Kelly,458,1018,-0.025152838427947577,0.03493449781659391,-0.06140784160770141,-0.001978239366963508
+full_common_test,Chemprop_DMPNN_absolute_difference,series_f5ab684673627f29d3,2020_Le Roux,2,10,0.10000000000000009,-1.0,0.035412498237565135,0.0
+full_common_test,CycDelta_matched_refit,series_ead665d28dd3375862,2021_Kelly,458,1018,-0.015480349344978106,0.05240174672489084,-0.015146785321991263,-0.001978239366963508
+full_common_test,CycDelta_matched_refit,series_f5ab684673627f29d3,2020_Le Roux,2,10,0.10000000000000009,-1.0,0.044451484503224475,0.0
+full_common_test,CycDelta_released_reference_only,series_ead665d28dd3375862,2021_Kelly,458,1018,0.1325327510917031,-0.17248908296943227,0.03382964357656876,-0.008902077151335397
+full_common_test,CycDelta_released_reference_only,series_f5ab684673627f29d3,2020_Le Roux,2,10,0.0,0.0,-0.263820454357192,0.0
+full_common_test,chem_only,series_ead665d28dd3375862,2021_Kelly,458,1018,0.0396506550218341,-0.06550218340611352,-0.009999104320805363,-0.0009891196834818095
+full_common_test,chem_only,series_f5ab684673627f29d3,2020_Le Roux,2,10,0.04999999999999982,-0.5,-0.21941118123941128,-0.16666666666666674
+full_common_test,chem_site,series_ead665d28dd3375862,2021_Kelly,458,1018,0.008275109170305689,-0.01965065502183405,-0.056502910682964536,-0.001978239366963508
+full_common_test,chem_site,series_f5ab684673627f29d3,2020_Le Roux,2,10,0.0,0.0,-0.1280624716263265,0.0
+full_common_test,extratrees_abs_diff,series_ead665d28dd3375862,2021_Kelly,458,1018,0.043897379912663764,-0.04475982532751094,-0.02499465119007732,0.069238377843719
+full_common_test,extratrees_abs_diff,series_f5ab684673627f29d3,2020_Le Roux,2,10,0.050000000000000266,-0.5,-0.30699843790173376,0.0
+full_common_test,ncAA_RepDistill_matched_readout,series_ead665d28dd3375862,2021_Kelly,458,1018,0.09884279475982533,-0.1703056768558952,-0.038261109655851,0.022749752720079064
+full_common_test,ncAA_RepDistill_matched_readout,series_f5ab684673627f29d3,2020_Le Roux,2,10,0.0,0.0,-0.2065213530045003,0.5
+full_common_test,plain_fusion,series_ead665d28dd3375862,2021_Kelly,458,1018,0.026484716157205268,-0.04585152838427947,-0.45406717757085135,-0.001978239366963508
+full_common_test,plain_fusion,series_f5ab684673627f29d3,2020_Le Roux,2,10,0.0,0.0,-0.28039056706242266,0.0
+full_common_test,random_site_zero_delta,series_ead665d28dd3375862,2021_Kelly,458,1018,0.011644832605531313,-0.016739446870451202,-0.07322224557257034,0.7497527200791295
+full_common_test,random_site_zero_delta,series_f5ab684673627f29d3,2020_Le Roux,2,10,0.04999999999999982,-0.5,0.04555353713221846,0.6666666666666666
+full_common_test,train_median_delta,series_ead665d28dd3375862,2021_Kelly,458,1018,0.011644832605531313,-0.016739446870451202,-0.0019452318201145236,-0.001978239366963508
+full_common_test,train_median_delta,series_f5ab684673627f29d3,2020_Le Roux,2,10,0.04999999999999982,-0.5,-0.1184464628677816,0.0
+full_common_test,v01_predict_pair,series_ead665d28dd3375862,2021_Kelly,458,1018,0.014912663755458522,-0.01746724890829693,-0.0444009631509209,0.04055390702274975
+full_common_test,v01_predict_pair,series_f5ab684673627f29d3,2020_Le Roux,2,10,0.0,0.0,-0.06638482629321518,0.0
+both_endpoints_unseen_by_CycDelta_OD_train,Chemprop_DMPNN_absolute_difference,series_ead665d28dd3375862,2021_Kelly,22,44,0.17818181818181822,-0.3181818181818182,-0.1751212802258405,0.0
+both_endpoints_unseen_by_CycDelta_OD_train,Chemprop_DMPNN_absolute_difference,series_f5ab684673627f29d3,2020_Le Roux,2,10,0.10000000000000009,-1.0,0.035412498237565135,0.0
+both_endpoints_unseen_by_CycDelta_OD_train,CycDelta_matched_refit,series_ead665d28dd3375862,2021_Kelly,22,44,0.24545454545454556,-0.27272727272727276,-0.02737883173606609,0.0
+both_endpoints_unseen_by_CycDelta_OD_train,CycDelta_matched_refit,series_f5ab684673627f29d3,2020_Le Roux,2,10,0.10000000000000009,-1.0,0.044451484503224475,0.0
+both_endpoints_unseen_by_CycDelta_OD_train,CycDelta_released_reference_only,series_ead665d28dd3375862,2021_Kelly,22,44,0.20090909090909098,-0.2272727272727273,-0.048893267180432076,0.0
+both_endpoints_unseen_by_CycDelta_OD_train,CycDelta_released_reference_only,series_f5ab684673627f29d3,2020_Le Roux,2,10,0.0,0.0,-0.263820454357192,0.0
+both_endpoints_unseen_by_CycDelta_OD_train,chem_only,series_ead665d28dd3375862,2021_Kelly,22,44,0.30318181818181833,-0.4545454545454546,0.002688623463565687,0.0
+both_endpoints_unseen_by_CycDelta_OD_train,chem_only,series_f5ab684673627f29d3,2020_Le Roux,2,10,0.04999999999999982,-0.5,-0.21941118123941128,-0.16666666666666674
+both_endpoints_unseen_by_CycDelta_OD_train,chem_site,series_ead665d28dd3375862,2021_Kelly,22,44,0.14409090909090916,-0.27272727272727276,-0.010845425819808907,0.0
+both_endpoints_unseen_by_CycDelta_OD_train,chem_site,series_f5ab684673627f29d3,2020_Le Roux,2,10,0.0,0.0,-0.1280624716263265,0.0
+both_endpoints_unseen_by_CycDelta_OD_train,extratrees_abs_diff,series_ead665d28dd3375862,2021_Kelly,22,44,0.22227272727272734,-0.3181818181818182,-0.11039548194759352,0.06818181818181812
+both_endpoints_unseen_by_CycDelta_OD_train,extratrees_abs_diff,series_f5ab684673627f29d3,2020_Le Roux,2,10,0.050000000000000266,-0.5,-0.30699843790173376,0.0
+both_endpoints_unseen_by_CycDelta_OD_train,ncAA_RepDistill_matched_readout,series_ead665d28dd3375862,2021_Kelly,22,44,0.24500000000000008,-0.40909090909090906,0.032731611782854275,0.0
+both_endpoints_unseen_by_CycDelta_OD_train,ncAA_RepDistill_matched_readout,series_f5ab684673627f29d3,2020_Le Roux,2,10,0.0,0.0,-0.2065213530045003,0.5
+both_endpoints_unseen_by_CycDelta_OD_train,plain_fusion,series_ead665d28dd3375862,2021_Kelly,22,44,0.12227272727272742,-0.27272727272727276,-0.2678579666397788,0.0
+both_endpoints_unseen_by_CycDelta_OD_train,plain_fusion,series_f5ab684673627f29d3,2020_Le Roux,2,10,0.0,0.0,-0.28039056706242266,0.0
+both_endpoints_unseen_by_CycDelta_OD_train,random_site_zero_delta,series_ead665d28dd3375862,2021_Kelly,22,44,0.19151515151515175,-0.31060606060606066,-0.19415128854188057,0.8863636363636364
+both_endpoints_unseen_by_CycDelta_OD_train,random_site_zero_delta,series_f5ab684673627f29d3,2020_Le Roux,2,10,0.04999999999999982,-0.5,0.04555353713221846,0.6666666666666666
+both_endpoints_unseen_by_CycDelta_OD_train,train_median_delta,series_ead665d28dd3375862,2021_Kelly,22,44,0.19151515151515175,-0.31060606060606066,-0.02551492490551671,0.0
+both_endpoints_unseen_by_CycDelta_OD_train,train_median_delta,series_f5ab684673627f29d3,2020_Le Roux,2,10,0.04999999999999982,-0.5,-0.1184464628677816,0.0
+both_endpoints_unseen_by_CycDelta_OD_train,v01_predict_pair,series_ead665d28dd3375862,2021_Kelly,22,44,0.09590909090909105,-0.18181818181818182,-0.13360636773921375,-0.022727272727272707
+both_endpoints_unseen_by_CycDelta_OD_train,v01_predict_pair,series_f5ab684673627f29d3,2020_Le Roux,2,10,0.0,0.0,-0.06638482629321518,0.0
+both_endpoints_unseen_in_ncAA_Phase2_train_and_val,Chemprop_DMPNN_absolute_difference,series_ead665d28dd3375862,2021_Kelly,29,66,0.011034482758620706,0.03448275862068967,0.00418890391532889,0.0
+both_endpoints_unseen_in_ncAA_Phase2_train_and_val,Chemprop_DMPNN_absolute_difference,series_f5ab684673627f29d3,2020_Le Roux,0,1,,,-0.0520679946057499,
+both_endpoints_unseen_in_ncAA_Phase2_train_and_val,CycDelta_matched_refit,series_ead665d28dd3375862,2021_Kelly,29,66,0.006206896551724128,0.0,0.027244259111978253,0.0
+both_endpoints_unseen_in_ncAA_Phase2_train_and_val,CycDelta_matched_refit,series_f5ab684673627f29d3,2020_Le Roux,0,1,,,-0.0138628776185215,
+both_endpoints_unseen_in_ncAA_Phase2_train_and_val,CycDelta_released_reference_only,series_ead665d28dd3375862,2021_Kelly,29,66,0.06586206896551719,0.0,-0.022115550879106882,-0.015384615384615441
+both_endpoints_unseen_in_ncAA_Phase2_train_and_val,CycDelta_released_reference_only,series_f5ab684673627f29d3,2020_Le Roux,0,1,,,-0.4474063809029758,
+both_endpoints_unseen_in_ncAA_Phase2_train_and_val,chem_only,series_ead665d28dd3375862,2021_Kelly,29,66,0.04137931034482756,0.0,-0.01458323144353929,0.0
+both_endpoints_unseen_in_ncAA_Phase2_train_and_val,chem_only,series_f5ab684673627f29d3,2020_Le Roux,0,1,,,-0.24640062404796487,
+both_endpoints_unseen_in_ncAA_Phase2_train_and_val,chem_site,series_ead665d28dd3375862,2021_Kelly,29,66,0.063448275862069,-0.03448275862068961,-0.08283393756712248,0.0
+both_endpoints_unseen_in_ncAA_Phase2_train_and_val,chem_site,series_f5ab684673627f29d3,2020_Le Roux,0,1,,,-0.216356887947768,
+both_endpoints_unseen_in_ncAA_Phase2_train_and_val,extratrees_abs_diff,series_ead665d28dd3375862,2021_Kelly,29,66,0.029310344827586182,0.03448275862068967,0.020706360106458155,-0.03076923076923077
+both_endpoints_unseen_in_ncAA_Phase2_train_and_val,extratrees_abs_diff,series_f5ab684673627f29d3,2020_Le Roux,0,1,,,-0.29295510858830287,
+both_endpoints_unseen_in_ncAA_Phase2_train_and_val,ncAA_RepDistill_matched_readout,series_ead665d28dd3375862,2021_Kelly,29,66,0.032413793103448246,0.0,-0.06513845123830397,0.06153846153846154
+both_endpoints_unseen_in_ncAA_Phase2_train_and_val,ncAA_RepDistill_matched_readout,series_f5ab684673627f29d3,2020_Le Roux,0,1,,,-0.0196292395703495,
+both_endpoints_unseen_in_ncAA_Phase2_train_and_val,plain_fusion,series_ead665d28dd3375862,2021_Kelly,29,66,0.04551724137931032,0.0,-0.5687188790944603,0.0
+both_endpoints_unseen_in_ncAA_Phase2_train_and_val,plain_fusion,series_f5ab684673627f29d3,2020_Le Roux,0,1,,,-0.6778900618664921,
+both_endpoints_unseen_in_ncAA_Phase2_train_and_val,random_site_zero_delta,series_ead665d28dd3375862,2021_Kelly,29,66,0.011034482758620734,0.017241379310344862,-0.0018564953748136936,0.6307692307692307
+both_endpoints_unseen_in_ncAA_Phase2_train_and_val,random_site_zero_delta,series_f5ab684673627f29d3,2020_Le Roux,0,1,,,0.0053374771960079,
+both_endpoints_unseen_in_ncAA_Phase2_train_and_val,train_median_delta,series_ead665d28dd3375862,2021_Kelly,29,66,0.011034482758620734,0.017241379310344862,0.0011738076554893562,0.0
+both_endpoints_unseen_in_ncAA_Phase2_train_and_val,train_median_delta,series_f5ab684673627f29d3,2020_Le Roux,0,1,,,-0.2746625228039921,
+both_endpoints_unseen_in_ncAA_Phase2_train_and_val,v01_predict_pair,series_ead665d28dd3375862,2021_Kelly,29,66,0.04344827586206898,0.0,0.013348408856457328,0.06153846153846154
+both_endpoints_unseen_in_ncAA_Phase2_train_and_val,v01_predict_pair,series_f5ab684673627f29d3,2020_Le Roux,0,1,,,-0.3014308805577457,
+both_endpoints_unseen_by_both_upstream_pools,Chemprop_DMPNN_absolute_difference,series_ead665d28dd3375862,2021_Kelly,3,0,0.04333333333333328,0.0,,
+both_endpoints_unseen_by_both_upstream_pools,Chemprop_DMPNN_absolute_difference,series_f5ab684673627f29d3,2020_Le Roux,0,1,,,-0.0520679946057499,
+both_endpoints_unseen_by_both_upstream_pools,CycDelta_matched_refit,series_ead665d28dd3375862,2021_Kelly,3,0,-0.07666666666666655,0.3333333333333333,,
+both_endpoints_unseen_by_both_upstream_pools,CycDelta_matched_refit,series_f5ab684673627f29d3,2020_Le Roux,0,1,,,-0.0138628776185215,
+both_endpoints_unseen_by_both_upstream_pools,CycDelta_released_reference_only,series_ead665d28dd3375862,2021_Kelly,3,0,0.0,0.0,,
+both_endpoints_unseen_by_both_upstream_pools,CycDelta_released_reference_only,series_f5ab684673627f29d3,2020_Le Roux,0,1,,,-0.4474063809029758,
+both_endpoints_unseen_by_both_upstream_pools,chem_only,series_ead665d28dd3375862,2021_Kelly,3,0,0.04333333333333328,0.0,,
+both_endpoints_unseen_by_both_upstream_pools,chem_only,series_f5ab684673627f29d3,2020_Le Roux,0,1,,,-0.24640062404796487,
+both_endpoints_unseen_by_both_upstream_pools,chem_site,series_ead665d28dd3375862,2021_Kelly,3,0,-0.07666666666666655,0.3333333333333333,,
+both_endpoints_unseen_by_both_upstream_pools,chem_site,series_f5ab684673627f29d3,2020_Le Roux,0,1,,,-0.216356887947768,
+both_endpoints_unseen_by_both_upstream_pools,extratrees_abs_diff,series_ead665d28dd3375862,2021_Kelly,3,0,0.0,0.0,,
+both_endpoints_unseen_by_both_upstream_pools,extratrees_abs_diff,series_f5ab684673627f29d3,2020_Le Roux,0,1,,,-0.29295510858830287,
+both_endpoints_unseen_by_both_upstream_pools,ncAA_RepDistill_matched_readout,series_ead665d28dd3375862,2021_Kelly,3,0,0.0,0.0,,
+both_endpoints_unseen_by_both_upstream_pools,ncAA_RepDistill_matched_readout,series_f5ab684673627f29d3,2020_Le Roux,0,1,,,-0.0196292395703495,
+both_endpoints_unseen_by_both_upstream_pools,plain_fusion,series_ead665d28dd3375862,2021_Kelly,3,0,-0.07666666666666655,0.3333333333333333,,
+both_endpoints_unseen_by_both_upstream_pools,plain_fusion,series_f5ab684673627f29d3,2020_Le Roux,0,1,,,-0.6778900618664921,
+both_endpoints_unseen_by_both_upstream_pools,random_site_zero_delta,series_ead665d28dd3375862,2021_Kelly,3,0,0.1699999999999999,-0.16666666666666669,,
+both_endpoints_unseen_by_both_upstream_pools,random_site_zero_delta,series_f5ab684673627f29d3,2020_Le Roux,0,1,,,0.0053374771960079,
+both_endpoints_unseen_by_both_upstream_pools,train_median_delta,series_ead665d28dd3375862,2021_Kelly,3,0,0.1699999999999999,-0.16666666666666669,,
+both_endpoints_unseen_by_both_upstream_pools,train_median_delta,series_f5ab684673627f29d3,2020_Le Roux,0,1,,,-0.2746625228039921,
+both_endpoints_unseen_by_both_upstream_pools,v01_predict_pair,series_ead665d28dd3375862,2021_Kelly,3,0,-0.07666666666666655,0.3333333333333333,,
+both_endpoints_unseen_by_both_upstream_pools,v01_predict_pair,series_f5ab684673627f29d3,2020_Le Roux,0,1,,,-0.3014308805577457,

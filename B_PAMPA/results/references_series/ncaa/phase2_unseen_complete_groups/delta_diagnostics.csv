@@ -1,0 +1,7 @@
+model,split,n,measured_positive,measured_negative,measured_zero,predicted_positive_fraction,predicted_median,measured_median,spearman_measured_delta_vs_prediction
+chem_only,leave_one_series_out,220,147,69,4,0.5181818181818182,0.0096220765,0.21,-0.027628469162949205
+explicit_edit,leave_one_series_out,220,147,69,4,0.740909090909091,0.294930975,0.21,-0.00873047452927853
+extratrees_abs_diff,leave_one_series_out,220,147,69,4,0.55,0.03040940735883035,0.21,0.08290266575424775
+ncAA_RepDistill_matched_readout,leave_one_series_out,220,147,69,4,0.8818181818181818,0.37767529487609863,0.21,0.019185403748693406
+random_site_zero_delta,leave_one_series_out,220,147,69,4,0.0,0.0,0.21,
+train_median_delta,leave_one_series_out,220,147,69,4,1.0,0.27,0.21,-0.10145879381068726

@@ -1,0 +1,68 @@
+{
+  "primary": {
+    "options": 4322,
+    "measured_delta": 3410,
+    "groups_including_singletons": 3057,
+    "rank_groups": 1112,
+    "rankable_unique_chemical_parents": 1112,
+    "rank_options": 2377,
+    "parent_without_point_rank_groups": 437,
+    "unique_measured_molecules": 4086,
+    "distinct_chemical_parents": 3057,
+    "de_NMe_backbones": 917,
+    "source_count": 8,
+    "protocol_count": 68,
+    "series": 8
+  },
+  "splits": {
+    "train": {
+      "options": 2751,
+      "measured_delta": 2358,
+      "groups_including_singletons": 2017,
+      "rank_groups": 646,
+      "rankable_unique_chemical_parents": 646,
+      "rank_options": 1380,
+      "parent_without_point_rank_groups": 187,
+      "unique_measured_molecules": 2788,
+      "distinct_chemical_parents": 2017,
+      "de_NMe_backbones": 650,
+      "source_count": 3,
+      "protocol_count": 45,
+      "series": 3
+    },
+    "valid": {
+      "options": 26,
+      "measured_delta": 24,
+      "groups_including_singletons": 18,
+      "rank_groups": 6,
+      "rankable_unique_chemical_parents": 6,
+      "rank_options": 14,
+      "parent_without_point_rank_groups": 1,
+      "unique_measured_molecules": 35,
+      "distinct_chemical_parents": 18,
+      "de_NMe_backbones": 13,
+      "source_count": 3,
+      "protocol_count": 3,
+      "series": 3
+    },
+    "test": {
+      "options": 1545,
+      "measured_delta": 1028,
+      "groups_including_singletons": 1022,
+      "rank_groups": 460,
+      "rankable_unique_chemical_parents": 460,
+      "rank_options": 983,
+      "parent_without_point_rank_groups": 249,
+      "unique_measured_molecules": 1263,
+      "distinct_chemical_parents": 1022,
+      "de_NMe_backbones": 254,
+      "source_count": 2,
+      "protocol_count": 20,
+      "series": 2
+    }
+  },
+  "raw_PAMPA_rows": 6941,
+  "stereo_eligible_rows": 6924,
+  "stereo_graphs": 6872,
+  "edges_sha256": "c35bc14c0ae71ac2f73a2f4cc51a39d776e87b53546e19bea706647fdcd6f735"
+}

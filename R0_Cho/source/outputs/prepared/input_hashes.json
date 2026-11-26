@@ -1,0 +1,9 @@
+{
+  "sha256": {
+    "6Y6C.pdb": "337a1fca645f4b5f4f4e0ecc7215603cd9f20a4bffcce247e38a2373c5dd82d8",
+    "5UD7.pdb": "5ea1082efc0f3101a523e2789c23ff5008505f544b9eecf3f2124e0a88b4ec84",
+    "6Y6C_A_atom_only.pdb": "65f8a864e6a36befee8e1f43e177f7edbc81c6e0170c06f7f1fc5ea8648a3da5",
+    "6y6c.pdb": "fcd93eca3730196a6ac83d21ec71e5a1b7ecccd95676d9fb9455abc63b578152"
+  },
+  "prepared_backbone_hash": "f4f48c81d90fece42103fd24f13f5edd69c32ff6d11ea9df0add043759fba0af"
+}

@@ -1,0 +1,20 @@
+{
+  "source_doi": "https://doi.org/10.1021/acs.jmedchem.6b01246.s001",
+  "source_sha256": "4f7f5364c5178e1aa80f02872c5a5117f857f1d80663997a94c0be6992da9e53",
+  "record_names_matched": 688,
+  "source_numeric_agreement": 680,
+  "source_missing_encoded_minus10": 8,
+  "excluded_training_candidates": [
+    {
+      "id": "CycPeptMPDB_record:1626",
+      "name": "2.3-03H",
+      "SI_value": "-8.88"
+    },
+    {
+      "id": "CycPeptMPDB_record:1662",
+      "name": "2.4-03H",
+      "SI_value": "-8.80"
+    }
+  ],
+  "interpretation": "All eight table dashes are nonquantitative. Two training candidates have zero displayed transmission and finite log Papp in the authors\u2019 numerical column. They were omitted under the predeclared QC filter."
+}

@@ -1,0 +1,18 @@
+{
+  "sequence": "GVSSVVQTLAPL",
+  "prediction_source": "public HighFold CPU substitution",
+  "ipTM": 0.105,
+  "pTM": 0.166,
+  "global_pLDDT": 31.001769230769234,
+  "peptide_pLDDT": 26.915000000000003,
+  "pae_peptide_to_receptor_A": 23.99349576271186,
+  "pae_receptor_to_peptide_A": 22.44199152542373,
+  "mean_interchain_PAE_A": 23.217743644067795,
+  "normalized_ipAE": 0.7490322580645161,
+  "peptide_self_fit_N_CA_C_rmsd_A": 8.360431318739538,
+  "TREM2_fit_CA_rmsd_A": 15.248074512794922,
+  "peptide_CA_rmsd_after_TREM2_fit_A": 23.06548272928026,
+  "rf_terminal_C_N_A": 36.27402425979229,
+  "fold_terminal_C_N_A": 1.3152562487971697,
+  "passes_notebook_gate": false
+}

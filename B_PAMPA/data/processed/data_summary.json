@@ -1,0 +1,108 @@
+{
+  "input_file": "cycpeptmpdb_all.csv",
+  "input_sha256": "16d09a19e1a7251f165fdaf89992a878028268a032ca0279269bf6aecf58c2cb",
+  "raw_records": 7451,
+  "pampa": {
+    "records": 6941,
+    "source_supplied_structural_ids": 6889,
+    "literal_smiles_strings": 6889,
+    "sources": {
+      "2006_Rezai_1": 10,
+      "2006_Rezai_2": 11,
+      "2013_CHUGAI": 878,
+      "2015_Ahlbach": 34,
+      "2015_Bockus_1": 15,
+      "2015_Bockus_2": 17,
+      "2015_Lewis": 2,
+      "2015_Marelli": 10,
+      "2015_Nielsen": 3,
+      "2015_Wang": 62,
+      "2016_Frost": 12,
+      "2016_Furukawa": 688,
+      "2016_Hickey": 18,
+      "2017_Pye": 21,
+      "2018_Buckton": 2,
+      "2018_García-Pindado": 4,
+      "2018_Kaneda": 7,
+      "2018_Lee": 6,
+      "2018_Naylor": 72,
+      "2018_Ramalho": 10,
+      "2019_Ono": 8,
+      "2020_Barlow": 26,
+      "2020_Furukawa": 36,
+      "2020_Hosono": 11,
+      "2020_Le Roux": 47,
+      "2020_Townsend": 3086,
+      "2021_Comeau": 42,
+      "2021_Golosov": 23,
+      "2021_Kelly": 1519,
+      "2021_Lee": 5,
+      "2021_Wang": 24,
+      "2022_Bhardwaj": 133,
+      "2022_Lee": 24,
+      "2022_Saunders": 11,
+      "2022_Taechalertpaisarn": 52,
+      "2022_Tamura": 12
+    },
+    "label_relations": {
+      "eq": 6604,
+      "requires_assay_review": 79,
+      "floor_or_left_censored": 240,
+      "ceiling_or_right_censored": 18
+    },
+    "monomer_lengths": {
+      "11": 219,
+      "6": 2058,
+      "7": 2057,
+      "13": 167,
+      "12": 213,
+      "10": 1711,
+      "14": 120,
+      "9": 99,
+      "8": 102,
+      "15": 26,
+      "4": 55,
+      "5": 61,
+      "3": 49,
+      "2": 4
+    },
+    "chemical_canonicalization_performed": false,
+    "train_test_split_created": false,
+    "matched_edit_pairs_counted": false
+  },
+  "label_policy": {
+    "eq": "Numeric database value with no detection-limit notes or boundary flag; not independently verified assay precision.",
+    "floor_or_left_censored": "At or below -10; retain the value but do not treat it as an exact regression label.",
+    "ceiling_or_right_censored": "At or above -4; retain the value but flag possible upper clipping.",
+    "requires_assay_review": "Detection-limit prose is present; its applicability to PAMPA requires source review."
+  },
+  "group_policy": "group equals the upstream structural identity. For source holdout, also exclude or move any identity present across both sets; recompute chemical identity from isomeric SMILES before formal training.",
+  "four_d": {
+    "records": 5160,
+    "source_supplied_structural_ids": 5140,
+    "literal_smiles_strings": 5140,
+    "sources": {
+      "2015_Wang": 62,
+      "2016_Furukawa": 688,
+      "2018_Naylor": 54,
+      "2020_Townsend": 2960,
+      "2021_Kelly": 1396
+    },
+    "label_relations": {
+      "eq": 4925,
+      "floor_or_left_censored": 215,
+      "ceiling_or_right_censored": 15,
+      "requires_assay_review": 5
+    },
+    "monomer_lengths": {
+      "10": 1396,
+      "7": 1919,
+      "6": 1845
+    },
+    "chemical_canonicalization_performed": false,
+    "train_test_split_created": false,
+    "matched_edit_pairs_counted": false,
+    "input_sha256": "587c7ab604ff7b22962406dcb6bbd49b19542a52aecb5e7e312124be0d4c1ca8",
+    "independent_new_labels": false
+  }
+}

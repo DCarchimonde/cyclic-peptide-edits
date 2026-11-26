@@ -1,0 +1,21 @@
+comparison,split,metric,eligible_series,difference,lower_95,upper_95
+explicit_edit minus chem_only,leave_one_series_out,regret,2,-0.03839285714285712,,
+explicit_edit minus chem_only,leave_one_series_out,hit,2,0.08928571428571429,,
+explicit_edit minus chem_only,leave_one_series_out,delta_mae,5,-0.011565218581727228,-0.06831199135151528,0.046634221535405466
+explicit_edit minus chem_only,leave_one_series_out,direction_accuracy,4,0.10648148148148148,0.0,0.4117647058823529
+explicit_edit minus extratrees_abs_diff,leave_one_series_out,regret,2,-0.06732142857142852,,
+explicit_edit minus extratrees_abs_diff,leave_one_series_out,hit,2,0.14285714285714285,,
+explicit_edit minus extratrees_abs_diff,leave_one_series_out,delta_mae,5,0.111768812169291,0.061196544702056356,0.14255303519447876
+explicit_edit minus extratrees_abs_diff,leave_one_series_out,direction_accuracy,4,0.06481481481481481,0.0,0.11764705882352941
+explicit_edit minus ncAA_RepDistill_matched_readout,leave_one_series_out,regret,2,-0.12107142857142852,,
+explicit_edit minus ncAA_RepDistill_matched_readout,leave_one_series_out,hit,2,0.21428571428571427,,
+explicit_edit minus ncAA_RepDistill_matched_readout,leave_one_series_out,delta_mae,5,0.05064463415379902,-0.16966623675451345,0.16981574242344477
+explicit_edit minus ncAA_RepDistill_matched_readout,leave_one_series_out,direction_accuracy,4,-0.06944444444444445,-0.15328467153284672,0.17647058823529413
+explicit_edit minus random_site_zero_delta,leave_one_series_out,regret,2,-0.027678571428571313,,
+explicit_edit minus random_site_zero_delta,leave_one_series_out,hit,2,0.03869047619047621,,
+explicit_edit minus random_site_zero_delta,leave_one_series_out,delta_mae,5,0.10956305485872728,-0.009576466645714295,0.16184320953472225
+explicit_edit minus random_site_zero_delta,leave_one_series_out,direction_accuracy,4,0.6064814814814815,0.5693430656934306,0.7058823529411765
+explicit_edit minus train_median_delta,leave_one_series_out,regret,2,-0.027678571428571313,,
+explicit_edit minus train_median_delta,leave_one_series_out,hit,2,0.03869047619047621,,
+explicit_edit minus train_median_delta,leave_one_series_out,delta_mae,5,0.14501760031327274,-0.0386472458363637,0.21609956064627997
+explicit_edit minus train_median_delta,leave_one_series_out,direction_accuracy,4,-0.07407407407407407,-0.15328467153284672,0.17647058823529413

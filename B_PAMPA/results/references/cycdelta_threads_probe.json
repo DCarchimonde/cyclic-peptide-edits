@@ -1,0 +1,52 @@
+{
+  "cohort": "full_common_test",
+  "runs": {
+    "delivered_two_threads": {
+      "rows": 4272,
+      "test_rank_parents": 460,
+      "test_deltas": 1028,
+      "regret": 0.26604347826086977,
+      "top1": 0.41304347826086957,
+      "delta_mae": 0.3860896906529187,
+      "best_epoch": 2,
+      "best_validation_mae": 0.31390067939956984,
+      "refit_prediction_sha256": "32bb76c55352c25e1d98389017be6eb41d12ee1e326a144534f6c8c9b6148ae5",
+      "released_prediction_sha256": "8609a8109798f524d17834449eb6de74be3af66d56d1cd46bc3644af06cc6810",
+      "validation_curve_sha256": "cce83ed2c6a189d0383ed92067bfaa99a1370f1f8983a6151eadd840f62aca90"
+    },
+    "one_thread_1": {
+      "rows": 4272,
+      "test_rank_parents": 460,
+      "test_deltas": 1028,
+      "regret": 0.25882608695652176,
+      "top1": 0.4543478260869565,
+      "delta_mae": 0.3939023707059107,
+      "best_epoch": 1,
+      "best_validation_mae": 0.30321796367565795,
+      "refit_prediction_sha256": "68b64d5eb9bae94d6892c2a2f2fbf7841e7955337c3480e4339a701c45660694",
+      "released_prediction_sha256": "8609a8109798f524d17834449eb6de74be3af66d56d1cd46bc3644af06cc6810",
+      "validation_curve_sha256": "6f9144aa94742959ebce31a88086a3adad0907ab4596b05a6f7c3a39cdcba60a"
+    },
+    "one_thread_2": {
+      "rows": 4272,
+      "test_rank_parents": 460,
+      "test_deltas": 1028,
+      "regret": 0.25882608695652176,
+      "top1": 0.4543478260869565,
+      "delta_mae": 0.3939023707059107,
+      "best_epoch": 1,
+      "best_validation_mae": 0.30321796367565795,
+      "refit_prediction_sha256": "68b64d5eb9bae94d6892c2a2f2fbf7841e7955337c3480e4339a701c45660694",
+      "released_prediction_sha256": "8609a8109798f524d17834449eb6de74be3af66d56d1cd46bc3644af06cc6810",
+      "validation_curve_sha256": "6f9144aa94742959ebce31a88086a3adad0907ab4596b05a6f7c3a39cdcba60a"
+    }
+  },
+  "one_thread_replication": {
+    "refit_prediction_sha256": true,
+    "released_prediction_sha256": true,
+    "validation_curve_sha256": true,
+    "best_epoch": true
+  },
+  "controlled_difference": "Same host, pinned source, inputs, initial seed, cached monomer vectors and fixed validation criterion. Command-level changes were torch intra-op thread count and OMP_NUM_THREADS (2 to 1); OPENBLAS_NUM_THREADS remained 1. This does not identify the old-host drift cause.",
+  "max_abs_all_predictions_one_vs_two": 0.13839192688465118
+}

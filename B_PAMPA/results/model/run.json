@@ -1,0 +1,68 @@
+{
+  "seed": 2026,
+  "torch_threads": 2,
+  "checkpoint_epochs": [
+    5,
+    10,
+    20,
+    35,
+    50
+  ],
+  "selected_epochs": {
+    "v01_predict_pair": 35,
+    "chem_only": 10,
+    "plain_fusion": 20,
+    "chem_site": 5,
+    "explicit_edit": 10
+  },
+  "head_parameters": {
+    "chem_only": 41793,
+    "plain_fusion": 62273,
+    "chem_site": 107329,
+    "explicit_edit": 148289
+  },
+  "seconds": 21.2,
+  "edits_sha256": "c35bc14c0ae71ac2f73a2f4cc51a39d776e87b53546e19bea706647fdcd6f735",
+  "encoder_spec": {
+    "esm": [
+      "biohub/esm2_t6_8M_UR50D",
+      "c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+      "model.safetensors",
+      "24c5fa474c48f3b754b86efe752d5f189d2bcd88190fa2270fc92b2ef3034189",
+      [
+        "config.json",
+        "vocab.txt",
+        "special_tokens_map.json",
+        "tokenizer_config.json"
+      ]
+    ],
+    "chem": [
+      "DeepChem/ChemBERTa-77M-MLM",
+      "ed8a5374f2024ec8da53760af91a33fb8f6a15ff",
+      "pytorch_model.bin",
+      "95571af26b61ba8d56b9d61ff108b5c9afe96fd69ea3cbd1901d9421e3d2dd6d",
+      [
+        "config.json",
+        "tokenizer.json",
+        "special_tokens_map.json",
+        "tokenizer_config.json"
+      ]
+    ]
+  },
+  "encoder_cache_version": "6d93e8dbb4de99de",
+  "training_observed_molecule_protocols": 2720,
+  "input_edges": 4322,
+  "common_edges": 4272,
+  "excluded_reasons": {
+    "disconnected_alpha_backbone": 50
+  },
+  "common_unique_molecules": 4455,
+  "residues_in_common_unique_molecules": 32240,
+  "unknown_esm_residues": 7957,
+  "fully_closed_alpha_backbone_molecules": 2303,
+  "sorted_splits": {
+    "train": 2701,
+    "test": 1545,
+    "valid": 26
+  }
+}

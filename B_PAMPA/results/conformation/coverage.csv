@@ -1,0 +1,5 @@
+split,candidate_edits,measured_delta,parent_4d,variant_4d,both_4d,both_4d_measured_delta,measured_delta_series_4d,rankable_groups,rankable_groups_with_at_least_two_covered,rankable_groups_entire_choice_set_covered,all_series,both_4d_series
+all,4322,3410,3376,4156,3283,3196,4,1112,662,652,8,4
+test,1545,1028,1030,1535,1030,1011,1,460,216,216,2,1
+train,2751,2358,2333,2606,2240,2172,2,646,442,432,3,2
+valid,26,24,13,15,13,13,1,6,4,4,3,1

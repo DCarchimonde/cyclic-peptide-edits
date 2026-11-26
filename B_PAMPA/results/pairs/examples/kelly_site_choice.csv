@@ -1,0 +1,3 @@
+site_label,parent_record_id,variant_record_id,parent_n_idx,variant_n_idx,methyl_idx,measured_parent_log10P,measured_variant_log10P,measured_delta,protocol_id,group_id,pair_id
+D-Leu4,CycPeptMPDB_record:6618,CycPeptMPDB_record:6645,23,23,24,-7.24,-6.85,0.39,2021_Kelly:L1:7,grp_01762f2f247e7d8e53,pair_455b13c48c5a80094b
+L-Leu6,CycPeptMPDB_record:6618,CycPeptMPDB_record:6622,39,39,40,-7.24,-5.48,1.76,2021_Kelly:L1:7,grp_01762f2f247e7d8e53,pair_65430f835935e513c0

@@ -1,0 +1,54 @@
+{
+  "record_id": "CycPeptMPDB_record:1",
+  "source": "2006_Rezai_1",
+  "compound": "Cyclosporine A",
+  "pampa": -6.6,
+  "unit": "log10(cm/s)",
+  "raw_smiles": "C/C=C/C[C@@H](C)[C@@H](O)[C@H]1C(=O)N[C@@H](CC)C(=O)N(C)CC(=O)N(C)[C@@H](CC(C)C)C(=O)N[C@@H](C(C)C)C(=O)N(C)[C@@H](CC(C)C)C(=O)N[C@@H](C)C(=O)N[C@H](C)C(=O)N(C)[C@@H](CC(C)C)C(=O)N(C)[C@@H](CC(C)C)C(=O)N(C)[C@@H](C(C)C)C(=O)N1C",
+  "tokens": [
+    "Abu",
+    "Sar",
+    "meL",
+    "V",
+    "meL",
+    "A",
+    "dA",
+    "meL",
+    "meL",
+    "meV",
+    "Me_Bmt(E)"
+  ],
+  "atom_features": [
+    "atomic number",
+    "formal charge",
+    "total degree",
+    "total H",
+    "aromatic",
+    "RDKit chiral tag enum",
+    "in ring"
+  ],
+  "edge_features": [
+    "bond order",
+    "RDKit double-bond stereo enum",
+    "in ring"
+  ],
+  "shapes": {
+    "x": [
+      85,
+      7
+    ],
+    "edge_index": [
+      2,
+      170
+    ],
+    "edge_attr": [
+      170,
+      3
+    ]
+  },
+  "closure": [
+    9,
+    11
+  ],
+  "closure_description": "Last source monomer carbonyl \u2192 first monomer Abu N; both atom indices use raw SMILES."
+}

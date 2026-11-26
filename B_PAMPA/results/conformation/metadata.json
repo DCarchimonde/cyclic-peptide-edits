@@ -1,0 +1,34 @@
+{
+  "n_rows": 5160,
+  "unique_exact_isomeric_structures": 5140,
+  "source_structural_ids": 5140,
+  "rows_complete_both_solvents": 5160,
+  "structures_with_multiple_distinct_vectors": 20,
+  "rows_by_source": {
+    "2020_Townsend": 2960,
+    "2021_Kelly": 1396,
+    "2016_Furukawa": 688,
+    "2015_Wang": 62,
+    "2018_Naylor": 54
+  },
+  "features_water": [
+    "Water_avgRMSD_All",
+    "Water_avgRMSD_BackBone",
+    "Water_avgGR",
+    "Water_Desolvation_Free_Energy",
+    "Water_3D_SASA",
+    "Water_3D_NPSA",
+    "Water_3D_PSA"
+  ],
+  "features_hexane": [
+    "Hexane_avgRMSD_All",
+    "Hexane_avgRMSD_BackBone",
+    "Hexane_avgGR",
+    "Hexane_3D_SASA",
+    "Hexane_3D_NPSA",
+    "Hexane_3D_PSA"
+  ],
+  "input_sha256": "587c7ab604ff7b22962406dcb6bbd49b19542a52aecb5e7e312124be0d4c1ca8",
+  "measurement_sha256": "7993ebce90c21d5542e65ac3a6a62aab5b83b712d3d6ebed1bdeec21f3307f9f",
+  "aggregation": "Mean distinct vectors per stereochemical structure. Published PAMPA was used only to cross-check the metadata."
+}

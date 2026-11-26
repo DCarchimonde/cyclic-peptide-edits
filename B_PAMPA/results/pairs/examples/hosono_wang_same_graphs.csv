@@ -1,0 +1,5 @@
+hosono_name,hosono_id,wang_name,wang_id,hosono_log10P,wang_si_log10P,smiles,hosono_delta,wang_delta
+CP1,2456,Compound.5,1049,-6.52,-5.91,CC(C)C[C@@H]1NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H]2CCCN2C(=O)[C@H](CC(C)C)NC(=O)[C@H](CC(C)C)NC(=O)[C@@H](CC(C)C)NC1=O,0.0,0.0
+MP1,2462,Compound.8,1052,-6.0,-5.89,CC(C)C[C@@H]1NC(=O)[C@@H](CC(C)C)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc2ccc(O)cc2)N(C)C(=O)[C@H]2CCCN2C(=O)[C@H](CC(C)C)NC1=O,0.52,0.02
+MP3,2464,Compound.6,1050,-6.22,-6.11,CC(C)C[C@@H]1NC(=O)[C@@H](CC(C)C)N(C)C(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H]2CCCN2C(=O)[C@H](CC(C)C)NC1=O,0.3,-0.2
+MP4,2465,Compound.7,1051,-5.66,-6.12,CC(C)C[C@@H]1NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H]2CCCN2C(=O)[C@H](CC(C)C)NC(=O)[C@H](CC(C)C)N(C)C(=O)[C@@H](CC(C)C)NC1=O,0.86,-0.21

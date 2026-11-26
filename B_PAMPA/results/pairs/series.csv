@@ -1,0 +1,9 @@
+source,family,series_id,split,options,measured_delta,groups_including_singletons,rank_groups,rankable_unique_chemical_parents,rank_options,parent_without_point_rank_groups,unique_measured_molecules,distinct_chemical_parents,de_NMe_backbones,source_count,protocol_count,series
+2020_Townsend,Townsend geometric hexa/heptapeptomer library,series_b210b42b7fa74010e6,train,2605,2212,1875,645,645,1375,187,2500,1875,508,1,36,1
+2021_Kelly,Kelly lariat topology and stereochemistry libraries,series_ead665d28dd3375862,test,1535,1018,1014,458,458,979,249,1249,1014,249,1,19,1
+2016_Furukawa,Furukawa cyclic peptomer libraries,series_5123e2c3ea2d032063,train,141,141,141,0,0,0,0,282,141,141,1,8,1
+2015_Bockus_2,Bockus sanguinamide A analogues,series_9645ce71b48ab56e13,valid,7,7,5,1,1,3,0,12,5,5,1,1,1
+2018_Lee,Lee LB51 scan,series_56b5fc34c1d072987a,train,5,5,1,1,1,5,0,6,1,1,1,1,1
+2020_Le Roux,Le Roux semipeptidic macrocycles,series_f5ab684673627f29d3,test,10,10,8,2,2,4,0,14,8,5,1,1,1
+2022_Bhardwaj,Bhardwaj de novo macrocycles,series_88d36d2378976ae68d,valid,4,4,4,0,0,0,0,8,4,4,1,1,1
+2015_Wang,Wang cyclic hexapeptide panel,series_65cf14ba3a869632f7,valid,15,13,9,5,5,11,1,15,9,4,1,1,1

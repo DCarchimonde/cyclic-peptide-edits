@@ -1,0 +1,17 @@
+{
+  "sequence": "GNSVNVETGARL",
+  "prediction_source": "published-sequence public HighFold refold",
+  "ipTM": 0.099,
+  "pTM": 0.199,
+  "global_pLDDT": 33.28692307692308,
+  "peptide_pLDDT": 34.10333333333333,
+  "pae_peptide_to_receptor_A": 22.043785310734464,
+  "pae_receptor_to_peptide_A": 22.921850282485877,
+  "mean_interchain_PAE_A": 22.48281779661017,
+  "normalized_ipAE": 0.7251612903225807,
+  "fold_terminal_C_N_A": 1.1793252307993745,
+  "TREM2_CA_rmsd_to_6Y6C_A_A": 12.843996899474174,
+  "peptide_RMSD_to_paper_backbone_A": null,
+  "paper_Rosetta_energy_recalculated": null,
+  "passes_notebook_gate": false
+}

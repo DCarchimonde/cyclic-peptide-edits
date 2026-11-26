@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "retrieved_on": "2026-11-24",
+  "files": [
+    {
+      "id": "cycpeptmpdb_all",
+      "local_path": "data/raw/cycpeptmpdb_all.csv",
+      "url": "https://raw.githubusercontent.com/akiyamalab/cycpeptmp/e7160fad03d1f43cd3c0179a540e445a8b12979b/data/CycPeptMPDB_Peptide_All.csv",
+      "bytes": 15842300,
+      "sha256": "16d09a19e1a7251f165fdaf89992a878028268a032ca0279269bf6aecf58c2cb",
+      "max_bytes": 25165824,
+      "upstream_commit": "e7160fad03d1f43cd3c0179a540e445a8b12979b"
+    },
+    {
+      "id": "cycpeptmp_license",
+      "local_path": "data/raw/cycpeptmp_LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/akiyamalab/cycpeptmp/e7160fad03d1f43cd3c0179a540e445a8b12979b/LICENSE",
+      "bytes": 1069,
+      "sha256": "6d68f9c1a6dba90fba194aa8fcb2d3252c60c47a3e050bf7bab88306c86fbcd6",
+      "max_bytes": 25165824,
+      "upstream_commit": "e7160fad03d1f43cd3c0179a540e445a8b12979b"
+    },
+    {
+      "id": "cycpeptmpdb_4d",
+      "local_path": "data/raw/cycpeptmpdb_4d.csv",
+      "url": "https://raw.githubusercontent.com/Gobliu/CycPeptMPDB-4D/5772a0b3d013ebd7c1f2c0768cf90a5705d59fe5/csvs/CycPeptMPDB-4D.csv",
+      "bytes": 1886551,
+      "sha256": "587c7ab604ff7b22962406dcb6bbd49b19542a52aecb5e7e312124be0d4c1ca8",
+      "max_bytes": 25165824,
+      "upstream_commit": "5772a0b3d013ebd7c1f2c0768cf90a5705d59fe5"
+    },
+    {
+      "id": "cycpeptmpdb_4d_license",
+      "local_path": "data/raw/cycpeptmpdb_4d_LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/Gobliu/CycPeptMPDB-4D/5772a0b3d013ebd7c1f2c0768cf90a5705d59fe5/LICENSE",
+      "bytes": 1064,
+      "sha256": "c80012e4136ad498ab9b56bfaa1cc1e9c3f48de5d18162277e546800f989a447",
+      "max_bytes": 25165824,
+      "upstream_commit": "5772a0b3d013ebd7c1f2c0768cf90a5705d59fe5"
+    }
+  ],
+  "references": [
+    {
+      "name": "CycPeptMPDB original database",
+      "doi": "10.1021/acs.jcim.2c01573",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36930969/"
+    },
+    {
+      "name": "CycPeptMP author code and data mirror",
+      "doi": "10.1093/bib/bbae417",
+      "url": "https://github.com/akiyamalab/cycpeptmp",
+      "license_notice": "data/raw/cycpeptmp_LICENSE.txt"
+    },
+    {
+      "name": "CycPeptMPDB-4D author data and code",
+      "doi": "10.1038/s41597-026-07984-9",
+      "url": "https://github.com/Gobliu/CycPeptMPDB-4D",
+      "dataset_url": "https://zenodo.org/records/21274695",
+      "license_notice": "data/raw/cycpeptmpdb_4d_LICENSE.txt"
+    }
+  ],
+  "scope": "The quick benchmark, Kelly example, fitted study head and archived predictions are bundled. Fetch the two unmodified upstream CSVs from the pinned author URLs into the listed local_path entries.",
+  "four_d_version_crosscheck": {
+    "zenodo_record": "21274695",
+    "zenodo_version": "v3",
+    "reported_md5": "e4b957982bd572aba5029963804e0524",
+    "downloaded_github_csv_md5": "e4b957982bd572aba5029963804e0524",
+    "result": "match",
+    "original_database_joined_rows": 5160,
+    "literal_smiles_mismatches": 0,
+    "pampa_label_mismatches": 0
+  }
+}

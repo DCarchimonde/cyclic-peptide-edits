@@ -1,0 +1,17 @@
+{
+  "sequence": "GSSVNVQTGEVL",
+  "prediction_source": "published-sequence public HighFold refold",
+  "ipTM": 0.102,
+  "pTM": 0.165,
+  "global_pLDDT": 31.445846153846155,
+  "peptide_pLDDT": 33.750833333333325,
+  "pae_peptide_to_receptor_A": 22.275324858757063,
+  "pae_receptor_to_peptide_A": 22.892740112994353,
+  "mean_interchain_PAE_A": 22.58403248587571,
+  "normalized_ipAE": 0.7283870967741934,
+  "fold_terminal_C_N_A": 1.1985691469414674,
+  "TREM2_CA_rmsd_to_6Y6C_A_A": 13.817855250156835,
+  "peptide_RMSD_to_paper_backbone_A": null,
+  "paper_Rosetta_energy_recalculated": null,
+  "passes_notebook_gate": false
+}

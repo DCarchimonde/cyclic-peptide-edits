@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+data/conformations/
+data/feature_cache/
+outputs/checkpoints/
+.DS_Store
+
+.cache/
+.external/
+.pytest_cache/
+
+# Per-machine PyCharm and run state
+.idea/
+/cache/
+/runs/
+/HISTORY.bundle

@@ -1,0 +1,16 @@
+{
+  "edits_sha256": "c35bc14c0ae71ac2f73a2f4cc51a39d776e87b53546e19bea706647fdcd6f735",
+  "common_support_sha256": "038fda98b3a4737bdf21ae83ac284ae3c59a5493a72c7d7039522ee21d5260d8",
+  "accepted_options": 4272,
+  "rejected_groups": 0,
+  "rdkit": "2026.03.4",
+  "cycdelta_commit": "0a686c93f4b10fd3318e39f38893cdc9cbd0a848",
+  "unimol_commit": "9f19c45c718192888a1c8a1c905f69f0755ea502",
+  "unimol_sha256": "7f5f14bb28bf479a0b8f38ebab4bb9d7ae867383f14c4d694d056500fa3446a7",
+  "fixed_reference": "parent_smiles",
+  "zero_correction": "f(hV-hP)-f(0)",
+  "best_epoch": 2,
+  "best_validation_mae": 0.31390067939956984,
+  "train_edges": 2308,
+  "valid_edges": 24
+}

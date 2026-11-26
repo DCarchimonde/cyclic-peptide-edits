@@ -1,0 +1,13 @@
+.idea/
+__pycache__/
+*.py[cod]
+.env
+.venv/
+*.bundle
+*.zip
+A_*/
+/R0_Cho/runs/
+/R0_Cho/source/upstream/
+/B_PAMPA/build/
+/B_PAMPA/data/raw/*.csv
+/B_PAMPA/data/raw/*.part

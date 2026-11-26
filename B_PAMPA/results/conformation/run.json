@@ -1,0 +1,13 @@
+{
+  "pairs_sha256": "c35bc14c0ae71ac2f73a2f4cc51a39d776e87b53546e19bea706647fdcd6f735",
+  "seed": 20261124,
+  "variant_only": false,
+  "estimator": "160 ExtraTrees, max_depth=8, min_samples_leaf=2, all features",
+  "fixed_training": "train only, measured same-assay deltas",
+  "evaluations": [
+    "fixed_test",
+    "fixed_valid",
+    "supplementary_LOSO"
+  ],
+  "trajectories_recomputed": 0
+}

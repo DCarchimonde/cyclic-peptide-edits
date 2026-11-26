@@ -1,0 +1,9 @@
+2026-11-26 01:10:01,032 WARNING: no GPU detected, will be using CPU
+2026-11-26 01:10:03,458 Found 1 citations for tools or databases
+2026-11-26 01:10:03,458 Query 1/1: TP2 (length 130)
+2026-11-26 01:10:46,579 alphafold2_multimer_v3_model_1_seed_000 recycle=0 pLDDT=30.1 pTM=0.157 ipTM=0.0789
+2026-11-26 01:11:04,707 alphafold2_multimer_v3_model_1_seed_000 recycle=1 pLDDT=31.5 pTM=0.165 ipTM=0.102 tol=2.81
+2026-11-26 01:11:04,710 alphafold2_multimer_v3_model_1_seed_000 took 58.7s (1 recycles)
+2026-11-26 01:11:04,739 reranking models by 'multimer' metric
+2026-11-26 01:11:04,740 rank_001_alphafold2_multimer_v3_model_1_seed_000 pLDDT=31.5 pTM=0.165 ipTM=0.102
+2026-11-26 01:11:05,248 Done

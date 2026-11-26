@@ -1,0 +1,258 @@
+{
+  "record_id": "CycPeptMPDB_record:1",
+  "source": "2006_Rezai_1",
+  "target": -6.6,
+  "upstream_sequence": "['Abu', 'Sar', 'meL', 'V', 'meL', 'A', 'dA', 'meL', 'meL', 'meV', 'Me_Bmt(E)']",
+  "smiles": "C/C=C/C[C@@H](C)[C@@H](O)[C@H]1C(=O)N[C@@H](CC)C(=O)N(C)CC(=O)N(C)[C@@H](CC(C)C)C(=O)N[C@@H](C(C)C)C(=O)N(C)[C@@H](CC(C)C)C(=O)N[C@@H](C)C(=O)N[C@H](C)C(=O)N(C)[C@@H](CC(C)C)C(=O)N(C)[C@@H](CC(C)C)C(=O)N(C)[C@@H](C(C)C)C(=O)N1C",
+  "residues": [
+    {
+      "n_idx": 11,
+      "ca_idx": 12,
+      "carbonyl_idx": 15,
+      "aa": "X",
+      "stereo_matches_standard_projection": null,
+      "n_methyl": false,
+      "atom_idx": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "n_methyl_atom_idx": []
+    },
+    {
+      "n_idx": 17,
+      "ca_idx": 19,
+      "carbonyl_idx": 20,
+      "aa": "G",
+      "stereo_matches_standard_projection": true,
+      "n_methyl": true,
+      "atom_idx": [
+        17,
+        19,
+        20,
+        21
+      ],
+      "n_methyl_atom_idx": [
+        18
+      ]
+    },
+    {
+      "n_idx": 22,
+      "ca_idx": 24,
+      "carbonyl_idx": 29,
+      "aa": "L",
+      "stereo_matches_standard_projection": true,
+      "n_methyl": true,
+      "atom_idx": [
+        22,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "n_methyl_atom_idx": [
+        23
+      ]
+    },
+    {
+      "n_idx": 31,
+      "ca_idx": 32,
+      "carbonyl_idx": 36,
+      "aa": "V",
+      "stereo_matches_standard_projection": true,
+      "n_methyl": false,
+      "atom_idx": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "n_methyl_atom_idx": []
+    },
+    {
+      "n_idx": 38,
+      "ca_idx": 40,
+      "carbonyl_idx": 45,
+      "aa": "L",
+      "stereo_matches_standard_projection": true,
+      "n_methyl": true,
+      "atom_idx": [
+        38,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "n_methyl_atom_idx": [
+        39
+      ]
+    },
+    {
+      "n_idx": 47,
+      "ca_idx": 48,
+      "carbonyl_idx": 50,
+      "aa": "A",
+      "stereo_matches_standard_projection": true,
+      "n_methyl": false,
+      "atom_idx": [
+        47,
+        48,
+        49,
+        50,
+        51
+      ],
+      "n_methyl_atom_idx": []
+    },
+    {
+      "n_idx": 52,
+      "ca_idx": 53,
+      "carbonyl_idx": 55,
+      "aa": "A",
+      "stereo_matches_standard_projection": false,
+      "n_methyl": false,
+      "atom_idx": [
+        52,
+        53,
+        54,
+        55,
+        56
+      ],
+      "n_methyl_atom_idx": []
+    },
+    {
+      "n_idx": 57,
+      "ca_idx": 59,
+      "carbonyl_idx": 64,
+      "aa": "L",
+      "stereo_matches_standard_projection": true,
+      "n_methyl": true,
+      "atom_idx": [
+        57,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "n_methyl_atom_idx": [
+        58
+      ]
+    },
+    {
+      "n_idx": 66,
+      "ca_idx": 68,
+      "carbonyl_idx": 73,
+      "aa": "L",
+      "stereo_matches_standard_projection": true,
+      "n_methyl": true,
+      "atom_idx": [
+        66,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74
+      ],
+      "n_methyl_atom_idx": [
+        67
+      ]
+    },
+    {
+      "n_idx": 75,
+      "ca_idx": 77,
+      "carbonyl_idx": 81,
+      "aa": "V",
+      "stereo_matches_standard_projection": true,
+      "n_methyl": true,
+      "atom_idx": [
+        75,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82
+      ],
+      "n_methyl_atom_idx": [
+        76
+      ]
+    },
+    {
+      "n_idx": 83,
+      "ca_idx": 8,
+      "carbonyl_idx": 9,
+      "aa": "X",
+      "stereo_matches_standard_projection": null,
+      "n_methyl": true,
+      "atom_idx": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        83
+      ],
+      "n_methyl_atom_idx": [
+        84
+      ]
+    }
+  ],
+  "atom_numbering": "0-based RDKit indices",
+  "backbone_cyclic": true,
+  "projected_original_order": "XGLVLAALLVX",
+  "canonical_esm_sequence": "AALLVXXGLVL",
+  "aligned_esm_rotation_max_abs_error": 0.0,
+  "tensor_shapes": {
+    "graph": [
+      2060
+    ],
+    "chem": [
+      384
+    ],
+    "protein": [
+      320
+    ],
+    "atom": [
+      11,
+      384
+    ],
+    "env": [
+      11,
+      384
+    ],
+    "prot": [
+      11,
+      320
+    ],
+    "local": [
+      11,
+      256
+    ]
+  },
+  "checkpoint_revisions": {
+    "esm": "c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+    "chem": "ed8a5374f2024ec8da53760af91a33fb8f6a15ff"
+  }
+}

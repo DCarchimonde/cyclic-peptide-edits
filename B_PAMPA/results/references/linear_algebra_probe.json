@@ -1,0 +1,22 @@
+{
+  "scope": "one first Chemprop training minibatch on the same AMD machine, only MKL_CBWR varied. This test cannot establish an Intel versus AMD cause or a final-score effect.",
+  "default": {
+    "initial_weight_hash": "2ff9fe6d41901aec245b8f1b3846c328c05c857f9a83e8fb70087df934c87536",
+    "first_batch_hash": "40006834a05f01b95e0a5af2dc121527fceac6211f3a62032b0188025f55f019",
+    "updated_weight_hash": "6ab9d8ae6918b58d54a01d2c615b17a634bb43aa6afc9a4b5cd8ce6025bdd8b8",
+    "cpu_mkl_compat": "default",
+    "loss": 0.9221248626708984
+  },
+  "compatible": {
+    "initial_weight_hash": "2ff9fe6d41901aec245b8f1b3846c328c05c857f9a83e8fb70087df934c87536",
+    "first_batch_hash": "40006834a05f01b95e0a5af2dc121527fceac6211f3a62032b0188025f55f019",
+    "updated_weight_hash": "f670f8f4b8ba361b069c8e6ddbb8f92bc8c47da7dc6f2abbe9dfb0ca5ba2bf58",
+    "cpu_mkl_compat": "COMPATIBLE",
+    "loss": 0.9221248626708984
+  },
+  "same_initialization": true,
+  "same_first_batch": true,
+  "same_updated_weight_hash": false,
+  "max_abs_first_prediction": 2.2351741790771484e-08,
+  "max_abs_first_gradient": 2.9802322387695312e-08
+}

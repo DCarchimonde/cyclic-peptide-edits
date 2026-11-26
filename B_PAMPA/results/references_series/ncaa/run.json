@@ -1,0 +1,15 @@
+{
+  "source_commit": "c88857132c028ee463fafb9167a51bf54177c6f2",
+  "checkpoint_sha256": "34bf3930189ddbb138e7eb6ca6bf4786f1baed2067c987030a6f76875679fbf4",
+  "features_sha256": "5b43d43818d8c1d2081f121bdb94b5e6db324943f1a9367a1c4ed18a965ef63a",
+  "edits_sha256": "c35bc14c0ae71ac2f73a2f4cc51a39d776e87b53546e19bea706647fdcd6f735",
+  "support_sha256": "038fda98b3a4737bdf21ae83ac284ae3c59a5493a72c7d7039522ee21d5260d8",
+  "split_file_sha256": "a2b4cf9db99528b75daf7dce09c72619699f547d04e59f6812bd66b4d08c1a4f",
+  "structures": 4455,
+  "outer_series": 8,
+  "opts": 4272,
+  "threads": 2,
+  "supervised_upstream_head": false,
+  "readout": "native 256-ReLU readout from build_mlp; validation RMSE, seed 42",
+  "exposure": "Phase2 unlabeled structural adaptation checked at both endpoints, whole-group removal for the clean subset. Prior teachers have incompletely enumerated training chemistry."
+}

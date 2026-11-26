@@ -1,0 +1,35 @@
+{
+  "group_id": "grp_01762f2f247e7d8e53",
+  "structure_order": [
+    "CycPeptMPDB_record:6645",
+    "CycPeptMPDB_record:6622"
+  ],
+  "frozen_predicted_delta": [
+    0.34381103515625,
+    0.33225783705711365
+  ],
+  "observed_delta": [
+    0.39,
+    1.76
+  ],
+  "model_preference_score_gap_second_minus_first": -0.011553198099136353,
+  "measured_gap_second_minus_first": 1.3699999999999992,
+  "integrated_gradient_steps": 256,
+  "local_score_decomposition_second_minus_first": {
+    "molecule_chem_parent": 0.0,
+    "molecule_chem_variant_minus_parent": -0.005550358444452286,
+    "complete_graph_parent": 0.0,
+    "complete_graph_variant_minus_parent": -0.009263355284929276,
+    "global_protein_parent": 0.0,
+    "global_protein_variant_minus_parent": 0.0,
+    "edit_atom_parent": 0.07522083818912506,
+    "edit_atom_variant_minus_parent": -0.002404268831014633,
+    "edit_atom_neighbourhood_parent": -0.012872663326561451,
+    "edit_atom_neighbourhood_variant_minus_parent": 0.016612118110060692,
+    "edit_chiral_graph_parent": 0.007215750403702259,
+    "edit_chiral_graph_variant_minus_parent": -0.0346539281308651,
+    "aligned_residue_context_parent": -0.045857373625040054,
+    "aligned_residue_context_variant_minus_parent": 0.0
+  },
+  "score_decomposition_error": -4.284083843231201e-08
+}

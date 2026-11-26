@@ -1,0 +1,5 @@
+paper_id,sequence_cyclic_notation,n_residues,ESI_MS_figure,MS_theoretical_reported,MS_observed_reported,paper_pLDDT,paper_ipTM,paper_ipAE,paper_RMSD_A,paper_dG_separated_per_dSASA_x100,provenance
+TP1,c(GNSVNVETGARL),12,S1,1198.30,1198.10,93.9,0.822,0.177,0.492,-1.985,published_Fig2_and_ESI_not_recomputed
+TP2,c(GSSVNVQTGEVL),12,S3,1171.28,1171.20,94.1,0.847,0.162,0.548,-2.005,published_Fig2_and_ESI_not_recomputed
+TP3,c(LPGRLVSLPDGRHLC),15,S5,1614.92,1614.60,93.4,0.824,0.192,0.574,-0.901,published_Fig2_and_ESI_not_recomputed
+TP4,c(VSAGVTTEKDGAVS),14,S7,1302.40,1302.20,95.5,0.894,0.133,0.615,-1.929,published_Fig2_and_ESI_not_recomputed

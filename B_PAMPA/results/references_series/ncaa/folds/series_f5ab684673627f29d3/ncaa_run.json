@@ -1,0 +1,14 @@
+{
+  "edits_sha256": "c35bc14c0ae71ac2f73a2f4cc51a39d776e87b53546e19bea706647fdcd6f735",
+  "common_support_sha256": "038fda98b3a4737bdf21ae83ac284ae3c59a5493a72c7d7039522ee21d5260d8",
+  "checkpoint": "34bf3930189ddbb138e7eb6ca6bf4786f1baed2067c987030a6f76875679fbf4",
+  "feature": "smiles_repr (CLS)",
+  "head_seed": 42,
+  "train_measurements": 3986,
+  "valid_measurements": 18,
+  "best_epoch": 3,
+  "best_valid_rmse": 0.5215350389480591,
+  "extracted_structures": 4455,
+  "native_readout_validation_rmse": 0.5215350171814149,
+  "upstream_supervised_head_reused": false
+}

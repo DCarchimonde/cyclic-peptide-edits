@@ -1,0 +1,21 @@
+comparison,split,metric,eligible_series,difference,lower_95,upper_95
+explicit_edit minus chem_only,leave_one_series_out,regret,6,0.010435176790571155,-0.01142857142857146,0.2216666666666666
+explicit_edit minus chem_only,leave_one_series_out,hit,6,0.013599274705349048,-0.08333333333333333,0.06666666666666667
+explicit_edit minus chem_only,leave_one_series_out,delta_mae,8,-0.024093635229886858,-0.051514618921658574,0.041249156527758915
+explicit_edit minus chem_only,leave_one_series_out,direction_accuracy,8,0.1053582179409994,-0.03334198571636635,0.1770836955261938
+explicit_edit minus extratrees_abs_diff,leave_one_series_out,regret,6,-0.011813236627379861,-0.04040448851774531,0.027754880694143187
+explicit_edit minus extratrees_abs_diff,leave_one_series_out,hit,6,0.04170444242973708,-0.16666666666666666,0.08515625
+explicit_edit minus extratrees_abs_diff,leave_one_series_out,delta_mae,8,0.047983830408769454,0.005272572563422931,0.07707577741354882
+explicit_edit minus extratrees_abs_diff,leave_one_series_out,direction_accuracy,8,0.050872968091511137,-0.1107582338038364,0.07383379254595143
+explicit_edit minus ncAA_RepDistill_matched_readout,leave_one_series_out,regret,6,-0.008023572076155942,-0.04886153846153847,0.1691666666666667
+explicit_edit minus ncAA_RepDistill_matched_readout,leave_one_series_out,hit,6,0.025385312783318223,-0.05587808417997097,0.30443143812708984
+explicit_edit minus ncAA_RepDistill_matched_readout,leave_one_series_out,delta_mae,8,0.01905012356585771,-0.12027451582540624,0.08236646282607601
+explicit_edit minus ncAA_RepDistill_matched_readout,leave_one_series_out,direction_accuracy,8,-0.0728476821192053,-0.10182956814069614,0.006275896142837637
+explicit_edit minus random_site_zero_delta,leave_one_series_out,regret,6,-0.0032178906013901366,-0.012412076056985287,0.0928018055555551
+explicit_edit minus random_site_zero_delta,leave_one_series_out,hit,6,0.023995164702326995,-0.08374999999999999,0.1047619047619048
+explicit_edit minus random_site_zero_delta,leave_one_series_out,delta_mae,8,0.02460962077893749,-0.045996999807137506,0.06273426991524998
+explicit_edit minus random_site_zero_delta,leave_one_series_out,direction_accuracy,8,0.6550270921131849,0.6145157089223805,0.713774026759849
+explicit_edit minus train_median_delta,leave_one_series_out,regret,6,-0.0032178906013901366,-0.012412076056985287,0.0928018055555551
+explicit_edit minus train_median_delta,leave_one_series_out,hit,6,0.023995164702326995,-0.08374999999999999,0.1047619047619048
+explicit_edit minus train_median_delta,leave_one_series_out,delta_mae,8,0.09624652554084227,0.023280270538117064,0.13520704327018965
+explicit_edit minus train_median_delta,leave_one_series_out,direction_accuracy,8,-0.10806742925948223,-0.14500780029963056,-0.0374319056424609

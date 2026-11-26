@@ -1,0 +1,41 @@
+{
+  "n_matched": 1519,
+  "observed_max_abs_db_minus_source_log10": 0.004997697469260487,
+  "zero_transmission_with_positive_papp": 41,
+  "zero_counts_by_library": {
+    "L1": 25,
+    "L5": 14,
+    "L2": 2
+  },
+  "n_frozen_measured_delta_checked_for_matching_isotope_position_lists": 1018,
+  "n_same_isotope_position_lists_measured_delta": 1018,
+  "n_frozen_rank_groups_checked_for_matching_isotope_positions": 458,
+  "n_same_isotope_position_lists_ranking": 458,
+  "source_files": {
+    "2": {
+      "sha256": "99cc1d11c6cd65fd9da8db8bc37e8c9ee44c5fc3ceb8579f13ea11327dca98d9",
+      "doi": "https://doi.org/10.1021/jacs.0c06115.s002"
+    },
+    "3": {
+      "sha256": "e0088382722c31a0cf5a039b1cc4c4e1778574ec2e63b299abb3fddc5861523c",
+      "doi": "https://doi.org/10.1021/jacs.0c06115.s003"
+    },
+    "4": {
+      "sha256": "4853b20ff248595a495dab1ad9c9faf1ff28e740ea603c14d1b318febb8b0f1c",
+      "doi": "https://doi.org/10.1021/jacs.0c06115.s004"
+    }
+  },
+  "source_methods": "https://doi.org/10.1021/jacs.0c06115.s001, pp S14\u2013S18 and Scheme S1",
+  "interpretation": "PAMPA Papp reported after manual integration of automatic zero-peaks when possible. No compound-level limit inferred. Thirteen L5 zero-transmission records have identical positive final Papp 0.14e-6.",
+  "frozen_Kelly": {
+    "options": 1535,
+    "measured_delta": 1018,
+    "rank_groups": 458
+  },
+  "restore_finite_source_values_Kelly": {
+    "options": 1555,
+    "measured_delta": 1057,
+    "rank_groups": 461
+  },
+  "expanded_pairs_sha256": "d077d83b88f1c3255b33a7ccd288546d4c599ae26a25c04c3b87b029a77503af"
+}

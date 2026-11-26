@@ -1,0 +1,16 @@
+evaluation,method,train_deltas,evaluated_options,fit_and_predict_seconds
+fixed_train_to_valid_and_test,2D,2172,1043,2.63
+fixed_train_to_valid_and_test,2D_water,2172,1043,2.96
+fixed_train_to_valid_and_test,2D_water_hexane,2172,1043,2.93
+holdout_series_5123e2c3ea2d032063,2D,3055,141,3.94
+holdout_series_5123e2c3ea2d032063,2D_water,3055,141,4.3
+holdout_series_5123e2c3ea2d032063,2D_water_hexane,3055,141,4.26
+holdout_series_65cf14ba3a869632f7,2D,3183,13,5.62
+holdout_series_65cf14ba3a869632f7,2D_water,3183,13,5.13
+holdout_series_65cf14ba3a869632f7,2D_water_hexane,3183,13,4.72
+holdout_series_b210b42b7fa74010e6,2D,1165,2099,1.32
+holdout_series_b210b42b7fa74010e6,2D_water,1165,2099,1.6
+holdout_series_b210b42b7fa74010e6,2D_water_hexane,1165,2099,1.6
+holdout_series_ead665d28dd3375862,2D,2185,1030,2.94
+holdout_series_ead665d28dd3375862,2D_water,2185,1030,3.21
+holdout_series_ead665d28dd3375862,2D_water_hexane,2185,1030,3.15

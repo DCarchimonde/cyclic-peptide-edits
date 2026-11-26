@@ -1,0 +1,31 @@
+{
+  "all_targets_model_rows": 2305,
+  "rows_by_pdb": {
+    "1abo": 1910,
+    "1ycr": 225,
+    "6y6c": 170
+  },
+  "rank1_ipTM_range": [
+    0.215,
+    0.347
+  ],
+  "rank1_normalized_ipAE_range": [
+    0.4890322580645161,
+    0.5683870967741936
+  ],
+  "present_backbone_indices": [
+    8,
+    14,
+    32,
+    41,
+    50,
+    51,
+    55,
+    60
+  ],
+  "target_rows": 170,
+  "backbones": 8,
+  "sequence_ids": 34,
+  "passed_model_rows": 0,
+  "passed_sequence_ids": 0
+}

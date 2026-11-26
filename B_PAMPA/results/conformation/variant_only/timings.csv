@@ -1,0 +1,4 @@
+evaluation,method,train_deltas,evaluated_options,fit_and_predict_seconds
+fixed_train_to_valid_and_test,2D,2230,1550,2.84
+fixed_train_to_valid_and_test,2D_water,2230,1550,2.76
+fixed_train_to_valid_and_test,2D_water_hexane,2230,1550,3.06

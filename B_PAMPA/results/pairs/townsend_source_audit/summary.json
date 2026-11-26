@@ -1,0 +1,36 @@
+{
+  "author_preprint": "https://doi.org/10.26434/chemrxiv.13335941.v1",
+  "workbooks": {
+    "hexa": {
+      "url": "https://www.cambridge.org/engage/api-gateway/coe/assets/orp/resource/item/60c752c3ee301c003cc7ac8a/original/curated-hexamer-permeability-data.xlsx",
+      "sha256": "de64c36b8b91a2a05b80e321c118f1c2faca70777277a8f33fe4877fe1d4ee08",
+      "rows": 1063
+    },
+    "hepta": {
+      "url": "https://www.cambridge.org/engage/api-gateway/coe/assets/orp/resource/item/60c752c3337d6c1032e28778/original/curated-heptamer-permeability-data.xlsx",
+      "sha256": "a079512f914476c2b4062aaeaae3d802e29a626a953a6506ade977068bf7c874",
+      "rows": 2023
+    }
+  },
+  "isomeric_graph_and_token_sequence_matches": 3086,
+  "author_pools_in_exact_bijection_with_reconstruction": 36,
+  "source_PappE_minus_6_field": {
+    "positive": 2866,
+    "zero": 205,
+    "blank": 15
+  },
+  "finite_max_roundoff_vs_snapshot": 0.004999444960487764,
+  "zero_encoded_minus10": 205,
+  "blank_encoded_minus4": 15,
+  "frozen_assay_checks": {
+    "point_pairs": 2212,
+    "source_sequence_substitutions": {
+      "l to Ml": 1160,
+      "L to ML": 1052
+    },
+    "point_pairs_max_abs_mass_delta_error_vs_CH2_Da": 5.006400005136413e-05,
+    "rank_groups": 645,
+    "rank_max_source_mass_range_Da": 0.0
+  },
+  "interpretation": "Workbook Mass is an author-reported field. Blank source Papp does not support a numeric upper bound."
+}

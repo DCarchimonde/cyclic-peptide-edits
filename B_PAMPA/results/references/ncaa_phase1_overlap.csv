@@ -1,0 +1,7 @@
+upstream_phase1_partition,split,upstream_rows,upstream_missing_smiles,upstream_multicomponent_rows,distinct_independently_closed_fragments,component_count_eligible_upstream_rows,options,parent_matches,variant_matches,any_endpoint_matches
+train,test,219150,0,219150,20,0,1545,0,0,0
+train,train,219150,0,219150,20,0,2751,0,0,0
+train,valid,219150,0,219150,20,0,26,0,0,0
+val,test,24350,0,24350,20,0,1545,0,0,0
+val,train,24350,0,24350,20,0,2751,0,0,0
+val,valid,24350,0,24350,20,0,26,0,0,0
