@@ -21,6 +21,7 @@ python -X utf8 run_b.py quick
 | B_07_Train_CUDA | 在支持的 GPU 上提取两种编码，再于 CPU 拟合同一组模型 | encoder_run.json、model/metrics.csv |
 | B_08_External | 核查 Ly 等发表的三个候选面板，用冻结的四个模型预测符合定义的位点 | summary.json、candidate_audit.csv、frozen_overlap.csv、encoder_exclusions.csv、predictions.csv |
 | B_09_Measured_Squares | 在冻结实测表内找齐同方案的母体、两个单点和双点，比较四者的 PAMPA | summary.json、squares.csv |
+| B_10_Square_Selection | 已知两个单点的实测值时，对同一母体的多个双点候选进行盲选对照 | summary.json、by_series.csv |
 
 每次运行都会打印独立的 runs 子目录。quick 和 baseline 的输入已随仓库提供。pairs、train、series 会按需从作者固定版本获取原始测量表，conformation 会获取 4D 描述符表。两个 CSV 的直接下载地址、落盘路径和 SHA-256 均见 [data/sources.json](data/sources.json)。train 和 series 的首次运行需要从 Hugging Face 获取两个模型；权重约 44 MiB，后续沿用本机 cache。可以从能访问模型仓库的机器复制完整 cache/weights 目录，代码会核验权重。CPU 与 GPU 的特征分别缓存，配对构建和两种训练作业按顺序复用同一份缓存。要重新生成特征，可将对应 features 目录改名后再运行。
 
@@ -43,3 +44,10 @@ python -X utf8 run_b.py quick
 用现成的 `cyc_b` 环境运行 `B_09_Measured_Squares` 或 `python -X utf8 run_b.py squares`。入口只读取已随包分发的冻结配对表，逐条沿用原单点实验的质控、系列、划分与测量方案。一个可用的四分子组包括同一方案下都有定量实测的起始母体、在它两个不同位置分别新增一个甲基所得的两个分子，以及由这两条路径得到的同一个双点产物。起始母体可能已带其他 N-甲基。沿两条路径均须能用归档原子映射对上另一个位点；未解决的映射单列计数。
 
 `squares.csv` 保留四个分子、四条原始配对的标识及实测 log₁₀P 值。每组记录双点相对母体、相对两个单点中较好者的增量，以及双点增量和两个单点增量之和的差。后者大于零表示超过对数标度下的简单相加。汇总按原系列与数据划分列出，多个组可共用分子；次数仅描述这批实测数据。表中“提高”按已记录的点估计和数值精度计算。各比较未设实验显著性阈值。零个合格组也会正常报告。
+
+
+## 用已测单点选择双点
+
+在 PyCharm 打开 `B_PAMPA`，项目解释器选 `cyc_b`，运行 `B_10_Square_Selection`。手动配置时脚本选 `run_b.py`，参数填 `square-selection`，工作目录选 `B_PAMPA`。使用本地 CPU 和随包冻结的配对表，已有 B_09 的运行目录可以保留。控制台完成行以 `B_SQUARE_SELECTION_OK` 开头，回传此行及本次的 `summary.json`。
+
+在同一来源、系列、测量协议、骨架和母体内，至少有两个不同双点产物可选才计入排序。三种方法分别按对数通透性可加、按较好的单点和按均匀随机选择。两个单点已有实测是本分析的输入条件。双点实测值仅用于事后计算选中最优的概率和相对最优的通透性损失。相同预测随机打破平局，使用其精确期望。多个路径指向同一产物时先合并，再计一次选项。先对同一母体的多个测量面板取均值，再按系列和数据划分报告。单一选项的面板可用于描述可加性偏差。Kelly、Townsend 等来源各自的样本数见 `interactions.csv`。本项是 B 论文的组合改造扩展分析。
