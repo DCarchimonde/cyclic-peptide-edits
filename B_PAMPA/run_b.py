@@ -47,7 +47,7 @@ def cache_lock(cache):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("task", nargs="?", default="quick",choices=["quick","pairs","baseline","train","series","conformation","external"])
+    parser.add_argument("task", nargs="?", default="quick",choices=["quick","pairs","baseline","train","series","conformation","external","squares"])
     parser.add_argument("--device", choices=["cpu","cuda"], default="cpu",
                         help="Use cuda only for encoder inference in train/series")
     parser.add_argument("--threads",type=int,default=2)
@@ -95,6 +95,8 @@ def dispatch(a):
         print(f"B_BASELINE_OK  ExtraTrees MAE={v['mae']:.4f}  train-mean MAE={v['training_mean_baseline_mae']:.4f}")
     elif a.task=="external":
         run(scripts/"external_ly.py", "--out", out, "--threads", a.threads)
+    elif a.task=="squares":
+        run(scripts / "measured_squares.py", "--pairs", PAIRS, "--expected-sha", PAIR_SHA, "--out", out)
     elif a.task=="conformation":
         run(scripts/"conform_ablation.py","--output",out/"conformation")
         print("B_CONFORMATION_OK")
