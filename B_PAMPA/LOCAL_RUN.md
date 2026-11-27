@@ -22,6 +22,7 @@ python -X utf8 run_b.py quick
 | B_08_External | 核查 Ly 等发表的三个候选面板，用冻结的四个模型预测符合定义的位点 | summary.json、candidate_audit.csv、frozen_overlap.csv、encoder_exclusions.csv、predictions.csv |
 | B_09_Measured_Squares | 在冻结实测表内找齐同方案的母体、两个单点和双点，比较四者的 PAMPA | summary.json、squares.csv |
 | B_10_Square_Selection | 已知两个单点的实测值时，对同一母体的多个双点候选进行盲选对照 | summary.json、by_series.csv |
+| B_11_Source_Panels | 在冻结表以外的文献来源中寻找单点位点对照，保存四个冻结模型的预测 | summary.json、source_panels.csv、source_options.csv、predictions.csv |
 
 每次运行都会打印独立的 runs 子目录。quick 和 baseline 的输入已随仓库提供。pairs、train、series 会按需从作者固定版本获取原始测量表，conformation 会获取 4D 描述符表。两个 CSV 的直接下载地址、落盘路径和 SHA-256 均见 [data/sources.json](data/sources.json)。train 和 series 的首次运行需要从 Hugging Face 获取两个模型；权重约 44 MiB，后续沿用本机 cache。可以从能访问模型仓库的机器复制完整 cache/weights 目录，代码会核验权重。CPU 与 GPU 的特征分别缓存，配对构建和两种训练作业按顺序复用同一份缓存。要重新生成特征，可将对应 features 目录改名后再运行。
 
@@ -51,3 +52,15 @@ python -X utf8 run_b.py quick
 在 PyCharm 打开 `B_PAMPA`，项目解释器选 `cyc_b`，运行 `B_10_Square_Selection`。手动配置时脚本选 `run_b.py`，参数填 `square-selection`，工作目录选 `B_PAMPA`。使用本地 CPU 和随包冻结的配对表，已有 B_09 的运行目录可以保留。控制台完成行以 `B_SQUARE_SELECTION_OK` 开头，回传此行及本次的 `summary.json`。
 
 在同一来源、系列、测量协议、骨架和母体内，至少有两个不同双点产物可选才计入排序。三种方法分别按对数通透性可加、按较好的单点和按均匀随机选择。两个单点已有实测是本分析的输入条件。双点实测值仅用于事后计算选中最优的概率和相对最优的通透性损失。相同预测随机打破平局，使用其精确期望。多个路径指向同一产物时先合并，再计一次选项。先对同一母体的多个测量面板取均值，再按系列和数据划分报告。单一选项的面板可用于描述可加性偏差。Kelly、Townsend 等来源各自的样本数见 `interactions.csv`。本项是 B 论文的组合改造扩展分析。
+
+## 从新增文献寻找单点位点对照
+
+在 PyCharm 的 B_PAMPA 项目中选择 `B_11_Source_Panels`，点击运行。沿用 `cyc_b` 和本地 CPU。手动配置使用脚本 `run_b.py`、参数 `source-panels`、工作目录 `B_PAMPA`。
+
+程序比较原始冻结表的全部来源与 LiteFold 镜像中 CycPeptMPDB 的 PAMPA 专表，原作者的结构、文献化合物编号、检测限和 PAMPA 字段用于还原候选对照。同篇文献中，同一化学母体至少要能通过两种不同的单点主链 N-甲基化得到带实测记录的产物。允许母体本身未测，此时仍可以比较子体。同结构的记录若存在不同实验值，保留原值供原文回查。只使用能往返验证的结构编辑。
+
+在至少两个选项有点估计的面板上，四个冻结模型给全部可表示的选项打分。预测输入只含结构和位点。先保留预测，再回原论文核对测量方法、实验分组、单位及检测下限。`priority_review` 计数要求面板内全部有效结构选项有点估计、母体和选项在旧原始表中均无精确重复，并通过与八个冻结系列的整分子及去甲基骨架相似性筛查（Tanimoto < 0.80）。B_08 已研究的 Ly 2024 单独标记。来源尚待核实的面板及编码失败记录也会落盘。数据卡的行级 train/test 划分不参与评测。
+
+首次自动下载固定版本的 PAMPA 专表，约 45 MB。若下载失败，可将下方固定文件原样保存为 `B_PAMPA/data/raw/litefold_pampa.jsonl`，然后再次点击该配置。SHA-256 为 `af478487cffd11d79d0554662fccff40d4bdba9377d70d9ea6087a46db33db20`。该步只在本地生成结果。请回传 `B_SOURCE_PANELS_OK` 行和本次 `summary.json`；具体原文复核可使用 `source_options.csv` 中的文献编号。
+
+[PAMPA 专表固定下载](https://huggingface.co/datasets/LiteFold/CycPepMPDB/resolve/0a897997d32c66c1570490d77b15ffbc4abf3410/tables/peptide_cycpeptmpdb_CycPeptMPDB_Peptide_Assay_PAMPA.csv.jsonl) · [镜像数据卡](https://huggingface.co/datasets/LiteFold/CycPepMPDB) · [CycPeptMPDB 数据库原文](https://doi.org/10.1021/acs.jcim.2c01573)

@@ -181,6 +181,32 @@ def checkpoint_digests(folder):
     return digests
 
 
+def score_panels(edges, out, threads):
+    """Score complete structure-only candidate panels with the four frozen heads."""
+    frozen = ROOT / "results/model/fitted"
+    checkpoint_hashes = checkpoint_digests(frozen)
+    preds = []
+    exclusions = []
+    if edges:
+        weights = ROOT / "cache/weights"
+        verify(weights, fetch=True)
+        frame = pd.DataFrame(edges)
+        bank = molecule_bank(frame, weights, out / "features", threads)
+        supported, rejected = encoder_eligible(frame, bank, complete=True)
+        exclusions = rejected.to_dict("records")
+        if not supported.empty:
+            torch.set_num_threads(threads)
+            for name in HEADS:
+                estimates = predict_frozen_head(supported, bank, frozen / (name + ".pt"))
+                for row, estimate in zip(supported.itertuples(), estimates):
+                    preds.append(dict(parent=row.group_id, candidate=row.pair_id, model=name,
+                                      predicted_delta=float(estimate)))
+    write_csv(out / "encoder_exclusions.csv", exclusions, ["pair_id", "group_id", "reason"])
+    write_csv(out / "predictions.csv", preds, ["parent", "candidate", "model", "predicted_delta"])
+    scored = sorted({r["parent"] for r in preds})
+    return scored, checkpoint_hashes
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--out", type=Path, required=True)
@@ -218,28 +244,8 @@ def main():
             edges.extend(options)
     write_csv(out / "candidate_audit.csv", audit)
     linked, seen = audit_overlap(structures, valid_structures, out)
-    frozen = ROOT / "results/model/fitted"
-    checkpoint_hashes = checkpoint_digests(frozen)
     eligible_groups = sorted({e["group_id"] for e in edges})
-    preds = []
-    exclusions = []
-    if edges:
-        weights = ROOT / "cache/weights"
-        verify(weights, fetch=True)
-        frame = pd.DataFrame(edges)
-        bank = molecule_bank(frame, weights, out / "features", args.threads)
-        supported, rejected = encoder_eligible(frame, bank, complete=True)
-        exclusions = rejected.to_dict("records")
-        if not supported.empty:
-            torch.set_num_threads(args.threads)
-            for name in HEADS:
-                estimates = predict_frozen_head(supported, bank, frozen / (name + ".pt"))
-                for row, estimate in zip(supported.itertuples(), estimates):
-                    preds.append(dict(parent=row.group_id, candidate=row.pair_id, model=name,
-                                      predicted_delta=float(estimate)))
-    write_csv(out / "encoder_exclusions.csv", exclusions, ["pair_id", "group_id", "reason"])
-    write_csv(out / "predictions.csv", preds, ["parent", "candidate", "model", "predicted_delta"])
-    scored = sorted({r["parent"] for r in preds})
+    scored, checkpoint_hashes = score_panels(edges, out, args.threads)
     info = dict(doi=DOI, structure_source=source, source_sha256=digest, requested_panels=PANELS,
                 structurally_rankable=eligible_groups, scored_panels=scored,
                 linked_frozen_series=linked, structures_in_pampa_snapshot=seen,

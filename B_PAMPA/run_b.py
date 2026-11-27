@@ -47,7 +47,7 @@ def cache_lock(cache):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("task", nargs="?", default="quick",choices=["quick","pairs","baseline","train","series","conformation","external","squares","square-selection"])
+    parser.add_argument("task", nargs="?", default="quick",choices=["quick","pairs","baseline","train","series","conformation","external","squares","square-selection","source-panels"])
     parser.add_argument("--device", choices=["cpu","cuda"], default="cpu",
                         help="Use cuda only for encoder inference in train/series")
     parser.add_argument("--threads",type=int,default=2)
@@ -56,7 +56,7 @@ def main():
         parser.error("--device cuda applies to the two pretrained encoders in train or series")
     if a.threads<1:
         parser.error("--threads must be positive")
-    guard = cache_lock(PROJECT / "cache") if a.task in ("pairs", "train", "series", "external") else nullcontext()
+    guard = cache_lock(PROJECT / "cache") if a.task in ("pairs", "train", "series", "external", "source-panels") else nullcontext()
     with guard:
         dispatch(a)
 
@@ -95,6 +95,8 @@ def dispatch(a):
         print(f"B_BASELINE_OK  ExtraTrees MAE={v['mae']:.4f}  train-mean MAE={v['training_mean_baseline_mae']:.4f}")
     elif a.task=="external":
         run(scripts/"external_ly.py", "--out", out, "--threads", a.threads)
+    elif a.task=="source-panels":
+        run(scripts / "expanded_sources.py", "--out", out, "--threads", a.threads)
     elif a.task=="squares":
         run(scripts / "measured_squares.py", "--pairs", PAIRS, "--expected-sha", PAIR_SHA, "--out", out)
     elif a.task=="square-selection":
