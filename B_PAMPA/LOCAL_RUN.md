@@ -64,3 +64,11 @@ python -X utf8 run_b.py quick
 首次自动下载固定版本的 PAMPA 专表，约 45 MB。若下载失败，可将下方固定文件原样保存为 `B_PAMPA/data/raw/litefold_pampa.jsonl`，然后再次点击该配置。SHA-256 为 `af478487cffd11d79d0554662fccff40d4bdba9377d70d9ea6087a46db33db20`。该步只在本地生成结果。请回传 `B_SOURCE_PANELS_OK` 行和本次 `summary.json`；具体原文复核可使用 `source_options.csv` 中的文献编号。
 
 [PAMPA 专表固定下载](https://huggingface.co/datasets/LiteFold/CycPepMPDB/resolve/0a897997d32c66c1570490d77b15ffbc4abf3410/tables/peptide_cycpeptmpdb_CycPeptMPDB_Peptide_Assay_PAMPA.csv.jsonl) · [镜像数据卡](https://huggingface.co/datasets/LiteFold/CycPepMPDB) · [CycPeptMPDB 数据库原文](https://doi.org/10.1021/acs.jcim.2c01573)
+
+## B_12 同母体位点成对排序
+
+在 PyCharm 的 B_PAMPA 项目中选择 `B_12_Pairwise_Rank`。脚本为 `run_b.py`，形参为 `pairwise-rank`，工作目录为 `B_PAMPA`。调用原有 `cyc_b` 环境和 B_04 的 CPU 编码缓存。在 GitHub ZIP 中更新文件时，合并到原仓库可复用 `cache/` 和已有运行记录。
+
+本轮比较两个训练头的首选位点。两者使用相同的分折、网络宽度、随机种子、对照和训练目标。一个读取原子化学与编辑位点，另一个增加全局和位点对齐的肽序列表征。对同一母体、同一实验条件下的两个实测变体，用分数差学习哪个位点较好。实测并列提供对称目标，每个可排序母体的训练总权重相同。训练、早停与测试分别使用原八折的 train、valid、test 系列。早停由验证母体首选损失决定。训练出的分数只表示优先顺序。
+
+首要比较为融合排序头相对同折重训 CycDelta 的逐母体首选损失差。负值表示融合排序头在这组母体上损失较小。另报相对仅化学排序头、原回归头和随机选位的差异、按系列成对重采样的区间、各系列明细。八个已用于既往比较的系列属于开发证据，独立来源的整组实测可用于下一步验证。输出 `site_scores.csv`、`comparison.csv`、`per_series.csv`、`paired_regret.csv` 和各折参数。请回传 `B_PAIRWISE_RANK_OK ...`、`comparison.csv` 和 `paired_regret.csv`。

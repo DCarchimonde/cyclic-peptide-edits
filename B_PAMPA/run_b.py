@@ -47,16 +47,16 @@ def cache_lock(cache):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("task", nargs="?", default="quick",choices=["quick","pairs","baseline","train","series","conformation","external","squares","square-selection","source-panels"])
+    parser.add_argument("task", nargs="?", default="quick",choices=["quick","pairs","baseline","train","series","conformation","external","squares","square-selection","source-panels","pairwise-rank"])
     parser.add_argument("--device", choices=["cpu","cuda"], default="cpu",
-                        help="Use cuda only for encoder inference in train/series")
+                        help="Use cuda only for encoder inference in train, series or pairwise-rank")
     parser.add_argument("--threads",type=int,default=2)
     a=parser.parse_args()
-    if a.device!="cpu" and a.task not in ("train","series"):
-        parser.error("--device cuda applies to the two pretrained encoders in train or series")
+    if a.device!="cpu" and a.task not in ("train","series","pairwise-rank"):
+        parser.error("--device cuda applies to the pretrained encoders in train, series or pairwise-rank")
     if a.threads<1:
         parser.error("--threads must be positive")
-    guard = cache_lock(PROJECT / "cache") if a.task in ("pairs", "train", "series", "external", "source-panels") else nullcontext()
+    guard = cache_lock(PROJECT / "cache") if a.task in ("pairs", "train", "series", "external", "source-panels", "pairwise-rank") else nullcontext()
     with guard:
         dispatch(a)
 
@@ -72,7 +72,7 @@ def dispatch(a):
     raw=SOURCE/"data/raw/cycpeptmpdb_all.csv"
     pampa=SOURCE/"data/processed/pampa.csv"
     print(f"New output: {out}",flush=True)
-    if a.task in ("pairs", "train", "series"):
+    if a.task in ("pairs", "train", "series", "pairwise-rank"):
         run(scripts / "fetch_data.py", "--only", "cycpeptmpdb_all")
     elif a.task == "conformation":
         run(scripts / "fetch_data.py", "--only", "cycpeptmpdb_4d")
@@ -114,6 +114,8 @@ def dispatch(a):
             with (out/"model/metrics.csv").open(encoding="utf-8",newline="") as f:
                 result=next(r for r in csv.DictReader(f) if r["split"]=="test" and r["model"]=="explicit_edit")
             print(f"B_TRAIN_OK  rank_parents={result['rank_parents']}  deltas={result['deltas']}  regret={result['regret']}")
+        elif a.task=="pairwise-rank":
+            run(scripts/"pairwise_rank.py",*options,"--out",out)
         else:
             run(scripts/"series_sensitivity.py",*options,"--work",out/"fitted_folds","--out",out/"series")
             print("B_SERIES_OK")
