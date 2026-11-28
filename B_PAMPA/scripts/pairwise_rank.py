@@ -160,13 +160,16 @@ def main():
             dest.mkdir(parents=True, exist_ok=True)
             pred, parents, meta = fit_fold(split, x, head, dest / (head + ".pt"))
             preds.append(pred)
-            parent_rows.append(parents)
+            if not parents.empty:
+                parent_rows.append(parents)
             fitted.append(dict(outer=outer, **meta))
             print(f"Finished {outer} {head}", flush=True)
         del x
     pd.concat(preds).to_csv(a.out / "site_scores.csv", index=False)
     pd.DataFrame(fitted).to_csv(a.out / "training.csv", index=False)
     archived = pd.read_csv(ROOT / "results/references_series/comparison_per_parent.csv")
+    if not parent_rows:
+        raise ValueError("No outer series supplied a rankable parent")
     n, s = compare(pd.concat(parent_rows), archived, a.out)
     meta = dict(options=len(frame), parents=n, rankable_series=s, folds=roles.outer.nunique(), fitted=len(fitted))
     (a.out / "summary.json").write_text(json.dumps(meta, indent=2) + "\n", encoding="utf-8")

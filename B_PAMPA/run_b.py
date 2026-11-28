@@ -47,16 +47,19 @@ def cache_lock(cache):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("task", nargs="?", default="quick",choices=["quick","pairs","baseline","train","series","conformation","external","squares","square-selection","source-panels","pairwise-rank"])
+    parser.add_argument("task", nargs="?", default="quick",choices=["quick","pairs","baseline","train","series","conformation","external","squares","square-selection","source-panels","pairwise-rank","hosono-panel"])
+    parser.add_argument("--b12-run", type=Path, help="B_12 result folder for hosono-panel; default is the latest completed run")
     parser.add_argument("--device", choices=["cpu","cuda"], default="cpu",
                         help="Use cuda only for encoder inference in train, series or pairwise-rank")
     parser.add_argument("--threads",type=int,default=2)
     a=parser.parse_args()
+    if a.b12_run is not None and a.task != "hosono-panel":
+        parser.error("--b12-run applies only to hosono-panel")
     if a.device!="cpu" and a.task not in ("train","series","pairwise-rank"):
         parser.error("--device cuda applies to the pretrained encoders in train, series or pairwise-rank")
     if a.threads<1:
         parser.error("--threads must be positive")
-    guard = cache_lock(PROJECT / "cache") if a.task in ("pairs", "train", "series", "external", "source-panels", "pairwise-rank") else nullcontext()
+    guard = cache_lock(PROJECT / "cache") if a.task in ("pairs", "train", "series", "external", "source-panels", "pairwise-rank", "hosono-panel") else nullcontext()
     with guard:
         dispatch(a)
 
@@ -97,6 +100,9 @@ def dispatch(a):
         run(scripts/"external_ly.py", "--out", out, "--threads", a.threads)
     elif a.task=="source-panels":
         run(scripts / "expanded_sources.py", "--out", out, "--threads", a.threads)
+    elif a.task=="hosono-panel":
+        loc = ["--b12-run", a.b12_run] if a.b12_run is not None else []
+        run(scripts / "hosono_panel.py", "--out", out, "--threads", a.threads, *loc)
     elif a.task=="squares":
         run(scripts / "measured_squares.py", "--pairs", PAIRS, "--expected-sha", PAIR_SHA, "--out", out)
     elif a.task=="square-selection":
